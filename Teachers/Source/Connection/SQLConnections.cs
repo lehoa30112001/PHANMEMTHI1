@@ -13,7 +13,7 @@ namespace PHANMEMTHI.Source.Connection {
 
     class SQLConnections {
 
-        public static SqlConnection Connection = new SqlConnection(@"Data Source=DESKTOP-S4GU3GQ\SQLEXPRESS;Initial Catalog=phanmemthi;Integrated Security=SSPI");
+        public static SqlConnection Connection;
 
         public static void Init(string s) {
             Connection = new SqlConnection();

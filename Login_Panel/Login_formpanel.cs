@@ -67,7 +67,7 @@ namespace PHANMEMTHI.Login_Panel
                 if (dt.Rows.Count == 1)
                 {
                     Login.ActiveForm.Hide();
-                    Forms.MainTeacherForm frm = new Forms.MainTeacherForm(userbox.Text, @"Data Source=DESKTOP-1LOB8EI;Initial Catalog=phanmemthi;Integrated Security=True");
+                    Forms.MainTeacherForm frm = new Forms.MainTeacherForm(userbox.Text, function.ConnectionString);
                     frm.Show();
                 }  
                 else
