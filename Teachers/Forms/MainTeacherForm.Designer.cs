@@ -24,60 +24,17 @@ namespace PHANMEMTHI.Forms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExam = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.btnClass = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClass = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnExam = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.examUC = new PHANMEMTHI.Forms.Panels.ExaminationUserControl();
             this.classUC = new PHANMEMTHI.Forms.Panels.ClassUserControl();
             this.reportUC = new PHANMEMTHI.Forms.Panels.ReportUserControl();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnExam);
-            this.panel1.Controls.Add(this.btnReport);
-            this.panel1.Controls.Add(this.btnClass);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 57);
-            this.panel1.TabIndex = 1;
-            // 
-            // btnExam
-            // 
-            this.btnExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExam.Location = new System.Drawing.Point(136, 4);
-            this.btnExam.Name = "btnExam";
-            this.btnExam.Size = new System.Drawing.Size(161, 50);
-            this.btnExam.TabIndex = 0;
-            this.btnExam.Text = "Kỳ thi";
-            this.btnExam.UseVisualStyleBackColor = true;
-            this.btnExam.Click += new System.EventHandler(this.OnExaminationButtonClick);
-            // 
-            // btnReport
-            // 
-            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(470, 4);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(161, 50);
-            this.btnReport.TabIndex = 0;
-            this.btnReport.Text = "Báo cáo";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.OnReportButtonClick);
-            // 
-            // btnClass
-            // 
-            this.btnClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClass.Location = new System.Drawing.Point(303, 4);
-            this.btnClass.Name = "btnClass";
-            this.btnClass.Size = new System.Drawing.Size(161, 50);
-            this.btnClass.TabIndex = 0;
-            this.btnClass.Text = "Lớp học";
-            this.btnClass.UseVisualStyleBackColor = true;
-            this.btnClass.Click += new System.EventHandler(this.OnClassButtonClick);
             // 
             // panel2
             // 
@@ -88,6 +45,60 @@ namespace PHANMEMTHI.Forms {
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(775, 443);
             this.panel2.TabIndex = 2;
+            // 
+            // btnClass
+            // 
+            this.btnClass.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnClass.FlatAppearance.BorderSize = 0;
+            this.btnClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClass.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClass.Location = new System.Drawing.Point(303, 4);
+            this.btnClass.Name = "btnClass";
+            this.btnClass.Size = new System.Drawing.Size(161, 67);
+            this.btnClass.TabIndex = 0;
+            this.btnClass.Text = "Lớp học";
+            this.btnClass.UseVisualStyleBackColor = false;
+            this.btnClass.Click += new System.EventHandler(this.OnClassButtonClick);
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Location = new System.Drawing.Point(470, 4);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(161, 67);
+            this.btnReport.TabIndex = 0;
+            this.btnReport.Text = "Báo cáo";
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.OnReportButtonClick);
+            // 
+            // btnExam
+            // 
+            this.btnExam.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnExam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExam.FlatAppearance.BorderSize = 0;
+            this.btnExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExam.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExam.Location = new System.Drawing.Point(136, 4);
+            this.btnExam.Name = "btnExam";
+            this.btnExam.Size = new System.Drawing.Size(161, 67);
+            this.btnExam.TabIndex = 0;
+            this.btnExam.Text = "Kỳ thi";
+            this.btnExam.UseVisualStyleBackColor = false;
+            this.btnExam.Click += new System.EventHandler(this.OnExaminationButtonClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.btnExam);
+            this.panel1.Controls.Add(this.btnReport);
+            this.panel1.Controls.Add(this.btnClass);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 70);
+            this.panel1.TabIndex = 1;
             // 
             // examUC
             // 
@@ -117,6 +128,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(800, 535);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -125,21 +137,20 @@ namespace PHANMEMTHI.Forms {
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "11192033 - GV Trần Chí Đức";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClose);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnClass;
-        private System.Windows.Forms.Button btnExam;
         private System.Windows.Forms.Panel panel2;
         private Panels.ClassUserControl classUC;
-        private System.Windows.Forms.Button btnReport;
         private Panels.ReportUserControl reportUC;
         private Panels.ExaminationUserControl examUC;
+        private System.Windows.Forms.Button btnClass;
+        private System.Windows.Forms.Button btnReport;
+        private System.Windows.Forms.Button btnExam;
+        private System.Windows.Forms.Panel panel1;
     }
 }

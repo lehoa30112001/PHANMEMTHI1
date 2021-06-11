@@ -38,7 +38,7 @@ namespace PHANMEMTHI.Forms {
             this.Teacher = SQLConnections.QueryTeacher(id);
 
             // Change title
-            this.Text = Teacher.ID + " - GV " + Teacher.Name;
+            this.Text = Teacher.ID.ToUpper() + " - GV " + Teacher.Name;
 
             // Change ExamUserControl
             this.examUC.labelCurrentExams.Text = SQLConnections.QueryCurrentExamAmount(id) + "";
@@ -62,12 +62,14 @@ namespace PHANMEMTHI.Forms {
 
         private void resetFontButtons() {
             foreach (var btn in buttons) {
-                btn.Font = new Font(btn.Font, FontStyle.Regular);
+                /*btn.Font = new Font(btn.Font, FontStyle.Regular);*/
+                btn.BackColor = Color.PowderBlue;
             }
         }
 
         private void setBold(ButtonBase btn) {
-            btn.Font = new Font(btn.Font, FontStyle.Bold);
+            /*btn.Font = new Font(btn.Font, FontStyle.Bold);*/
+            btn.BackColor = Color.AliceBlue ;
         }
 
         private void OnClassButtonClick(object sender, EventArgs e) {

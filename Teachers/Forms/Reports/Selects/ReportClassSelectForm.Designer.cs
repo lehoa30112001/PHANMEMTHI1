@@ -31,7 +31,7 @@ namespace PHANMEMTHI.Forms {
             // 
             // btnCreate
             // 
-            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Location = new System.Drawing.Point(114, 92);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(344, 45);
@@ -43,10 +43,10 @@ namespace PHANMEMTHI.Forms {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(111, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 16);
+            this.label1.Size = new System.Drawing.Size(98, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chọn lớp học";
             // 
@@ -55,7 +55,7 @@ namespace PHANMEMTHI.Forms {
             this.cbSubjects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSubjects.FormattingEnabled = true;
             this.cbSubjects.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cbSubjects.Location = new System.Drawing.Point(213, 28);
+            this.cbSubjects.Location = new System.Drawing.Point(213, 31);
             this.cbSubjects.Name = "cbSubjects";
             this.cbSubjects.Size = new System.Drawing.Size(245, 21);
             this.cbSubjects.TabIndex = 3;

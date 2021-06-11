@@ -35,10 +35,10 @@ namespace PHANMEMTHI.Forms.Panels {
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(60, 4);
+            this.labelName.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(54, 8);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(174, 15);
+            this.labelName.Size = new System.Drawing.Size(172, 15);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Hệ thống thông tin quản lý 61B";
             this.labelName.Click += new System.EventHandler(this.OnClick);
@@ -46,10 +46,10 @@ namespace PHANMEMTHI.Forms.Panels {
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 28);
+            this.label2.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(54, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(50, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã lớp: ";
             this.label2.Click += new System.EventHandler(this.OnClick);
@@ -68,10 +68,10 @@ namespace PHANMEMTHI.Forms.Panels {
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelID.Location = new System.Drawing.Point(101, 28);
+            this.labelID.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelID.Location = new System.Drawing.Point(98, 28);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(56, 13);
+            this.labelID.Size = new System.Drawing.Size(56, 15);
             this.labelID.TabIndex = 2;
             this.labelID.Text = "6273X124";
             this.labelID.Click += new System.EventHandler(this.OnClick);
@@ -80,6 +80,7 @@ namespace PHANMEMTHI.Forms.Panels {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelID);

@@ -44,53 +44,59 @@ namespace PHANMEMTHI.Forms.Panels {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 142);
+            this.label1.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 16);
+            this.label1.Size = new System.Drawing.Size(177, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lọc kỳ thi bắt đầu từ ngày";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("UTM Avo", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(290, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 18);
+            this.label2.Size = new System.Drawing.Size(198, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tạo báo cáo kết quả thi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(259, 189);
+            this.label3.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(263, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 16);
+            this.label3.Size = new System.Drawing.Size(71, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "Đến ngày";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(240, 270);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(289, 39);
             this.button1.TabIndex = 2;
             this.button1.Text = "Báo cáo theo lớp";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.OnButtonClassClick);
             // 
             // btnSubject
             // 
-            this.btnSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubject.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnSubject.FlatAppearance.BorderSize = 0;
+            this.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubject.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubject.Location = new System.Drawing.Point(240, 315);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Size = new System.Drawing.Size(289, 39);
             this.btnSubject.TabIndex = 2;
             this.btnSubject.Text = "Báo cáo theo môn học";
-            this.btnSubject.UseVisualStyleBackColor = true;
+            this.btnSubject.UseVisualStyleBackColor = false;
             this.btnSubject.Click += new System.EventHandler(this.OnButtonSubjectClick);
             // 
             // cbEDYear
@@ -146,6 +152,7 @@ namespace PHANMEMTHI.Forms.Panels {
             // cbSTDay
             // 
             this.cbSTDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSTDay.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbSTDay.FormattingEnabled = true;
             this.cbSTDay.Location = new System.Drawing.Point(340, 138);
             this.cbSTDay.Name = "cbSTDay";
