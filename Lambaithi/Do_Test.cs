@@ -189,7 +189,7 @@ namespace PHANMEMTHI
                     Button b = item as Button;
                     if (b != null)
                     {
-                        b.BackColor = Color.Red;
+                        b.BackColor = Color.PaleTurquoise;
                     }
                 }
             } // Chuyển các câu hỏi đã nhập sang đỏ
