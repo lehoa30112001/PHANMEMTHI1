@@ -30,9 +30,9 @@ namespace PHANMEMTHI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowExamResult));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbnumber = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@ namespace PHANMEMTHI
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.lbnumber);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.extime);
@@ -187,6 +187,7 @@ namespace PHANMEMTHI
             // 
             this.guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(18, 22);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -208,8 +209,8 @@ namespace PHANMEMTHI
             // 
             // resulttb
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.resulttb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.resulttb.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.resulttb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -218,25 +219,25 @@ namespace PHANMEMTHI
             this.resulttb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resulttb.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.resulttb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.resulttb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.resulttb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.resulttb.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.resulttb.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.resulttb.DefaultCellStyle = dataGridViewCellStyle3;
             this.resulttb.EnableHeadersVisualStyles = false;
-            this.resulttb.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.resulttb.GridColor = System.Drawing.Color.Teal;
             this.resulttb.Location = new System.Drawing.Point(43, 217);
             this.resulttb.Name = "resulttb";
             this.resulttb.ReadOnly = true;
@@ -246,14 +247,13 @@ namespace PHANMEMTHI
             this.resulttb.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.resulttb.Size = new System.Drawing.Size(1006, 315);
             this.resulttb.TabIndex = 2;
-            this.resulttb.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.resulttb.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.resulttb.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.resulttb.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.resulttb.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.resulttb.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.resulttb.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.resulttb.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.resulttb.ThemeStyle.GridColor = System.Drawing.Color.Teal;
             this.resulttb.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.CornflowerBlue;
             this.resulttb.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.resulttb.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,6 +275,8 @@ namespace PHANMEMTHI
             this.redobutton.BorderRadius = 20;
             this.redobutton.CheckedState.Parent = this.redobutton;
             this.redobutton.CustomImages.Parent = this.redobutton;
+            this.redobutton.DisabledState.Parent = this.redobutton;
+            this.redobutton.FillColor = System.Drawing.Color.Teal;
             this.redobutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redobutton.ForeColor = System.Drawing.Color.White;
             this.redobutton.HoverState.Parent = this.redobutton;
@@ -292,6 +294,8 @@ namespace PHANMEMTHI
             this.homebutton.BorderRadius = 20;
             this.homebutton.CheckedState.Parent = this.homebutton;
             this.homebutton.CustomImages.Parent = this.homebutton;
+            this.homebutton.DisabledState.Parent = this.homebutton;
+            this.homebutton.FillColor = System.Drawing.Color.Teal;
             this.homebutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebutton.ForeColor = System.Drawing.Color.White;
             this.homebutton.HoverState.Parent = this.homebutton;
@@ -309,6 +313,8 @@ namespace PHANMEMTHI
             this.backbutton.BorderRadius = 20;
             this.backbutton.CheckedState.Parent = this.backbutton;
             this.backbutton.CustomImages.Parent = this.backbutton;
+            this.backbutton.DisabledState.Parent = this.backbutton;
+            this.backbutton.FillColor = System.Drawing.Color.Teal;
             this.backbutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbutton.ForeColor = System.Drawing.Color.White;
             this.backbutton.HoverState.Parent = this.backbutton;
@@ -325,7 +331,7 @@ namespace PHANMEMTHI
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderRadius = 25;
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.label2);
@@ -340,7 +346,7 @@ namespace PHANMEMTHI
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(390, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(294, 26);

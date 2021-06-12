@@ -33,6 +33,7 @@ namespace PHANMEMTHI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.hombut = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -59,7 +60,7 @@ namespace PHANMEMTHI
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.hombut);
             this.panel1.Controls.Add(this.studentbirthday);
@@ -92,6 +93,7 @@ namespace PHANMEMTHI
             // 
             this.hombut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hombut.Image = ((System.Drawing.Image)(resources.GetObject("hombut.Image")));
+            this.hombut.ImageRotate = 0F;
             this.hombut.Location = new System.Drawing.Point(944, 17);
             this.hombut.Name = "hombut";
             this.hombut.ShadowDecoration.Parent = this.hombut;
@@ -117,6 +119,7 @@ namespace PHANMEMTHI
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(19, 15);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -191,7 +194,7 @@ namespace PHANMEMTHI
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderRadius = 25;
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.Chitiet);
@@ -210,6 +213,8 @@ namespace PHANMEMTHI
             this.Chitiet.BorderRadius = 15;
             this.Chitiet.CheckedState.Parent = this.Chitiet;
             this.Chitiet.CustomImages.Parent = this.Chitiet;
+            this.Chitiet.DisabledState.Parent = this.Chitiet;
+            this.Chitiet.FillColor = System.Drawing.Color.Teal;
             this.Chitiet.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chitiet.ForeColor = System.Drawing.Color.White;
             this.Chitiet.HoverState.Parent = this.Chitiet;
@@ -227,6 +232,8 @@ namespace PHANMEMTHI
             this.backbt.BorderRadius = 15;
             this.backbt.CheckedState.Parent = this.backbt;
             this.backbt.CustomImages.Parent = this.backbt;
+            this.backbt.DisabledState.Parent = this.backbt;
+            this.backbt.FillColor = System.Drawing.Color.Teal;
             this.backbt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbt.ForeColor = System.Drawing.Color.White;
             this.backbt.HoverState.Parent = this.backbt;
@@ -243,7 +250,7 @@ namespace PHANMEMTHI
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(327, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(398, 26);
@@ -265,10 +272,10 @@ namespace PHANMEMTHI
             this.classinfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.classinfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.classinfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -282,25 +289,32 @@ namespace PHANMEMTHI
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.classinfo.DefaultCellStyle = dataGridViewCellStyle3;
             this.classinfo.EnableHeadersVisualStyles = false;
-            this.classinfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.classinfo.GridColor = System.Drawing.Color.Teal;
             this.classinfo.Location = new System.Drawing.Point(43, 75);
             this.classinfo.Name = "classinfo";
             this.classinfo.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.classinfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.classinfo.RowHeadersVisible = false;
             this.classinfo.RowHeadersWidth = 51;
             this.classinfo.RowTemplate.Height = 24;
             this.classinfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.classinfo.Size = new System.Drawing.Size(987, 308);
             this.classinfo.TabIndex = 58;
-            this.classinfo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.classinfo.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.classinfo.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.classinfo.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.classinfo.ThemeStyle.GridColor = System.Drawing.Color.Teal;
+            this.classinfo.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Teal;
             this.classinfo.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.classinfo.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classinfo.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;

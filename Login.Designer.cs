@@ -37,10 +37,10 @@ namespace PHANMEMTHI
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.login_formpanel1 = new PHANMEMTHI.Login_Panel.Login_formpanel();
             this.form_gioithieu1 = new PHANMEMTHI.Login_Panel.form_gioithieu();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.Panel1.SuspendLayout();
@@ -48,7 +48,7 @@ namespace PHANMEMTHI
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BackColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Panel1.Controls.Add(this.formintro);
             this.guna2Panel1.Controls.Add(this.formlogin);
@@ -67,6 +67,8 @@ namespace PHANMEMTHI
             this.formintro.BorderThickness = 2;
             this.formintro.CheckedState.Parent = this.formintro;
             this.formintro.CustomImages.Parent = this.formintro;
+            this.formintro.DisabledState.Parent = this.formintro;
+            this.formintro.FillColor = System.Drawing.Color.Teal;
             this.formintro.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formintro.ForeColor = System.Drawing.Color.White;
             this.formintro.HoverState.Parent = this.formintro;
@@ -85,6 +87,8 @@ namespace PHANMEMTHI
             this.formlogin.BorderThickness = 2;
             this.formlogin.CheckedState.Parent = this.formlogin;
             this.formlogin.CustomImages.Parent = this.formlogin;
+            this.formlogin.DisabledState.Parent = this.formlogin;
+            this.formlogin.FillColor = System.Drawing.Color.Teal;
             this.formlogin.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formlogin.ForeColor = System.Drawing.Color.White;
             this.formlogin.HoverState.Parent = this.formlogin;
@@ -101,19 +105,21 @@ namespace PHANMEMTHI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(140, 25);
+            this.label1.Location = new System.Drawing.Point(120, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(550, 32);
+            this.label1.Size = new System.Drawing.Size(526, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN";
+            this.label1.Text = "TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC TẾ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(32, 11);
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(14, 16);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(102, 99);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(90, 80);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -127,15 +133,6 @@ namespace PHANMEMTHI
             this.Panel1.ShadowDecoration.Parent = this.Panel1;
             this.Panel1.Size = new System.Drawing.Size(806, 340);
             this.Panel1.TabIndex = 1;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this.Panel1;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.Panel1;
             // 
             // login_formpanel1
             // 
@@ -152,6 +149,15 @@ namespace PHANMEMTHI
             this.form_gioithieu1.TabIndex = 1;
             this.form_gioithieu1.Visible = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this.Panel1;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.Panel1;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -162,7 +168,6 @@ namespace PHANMEMTHI
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

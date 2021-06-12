@@ -69,7 +69,7 @@ namespace PHANMEMTHI
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.hombut);
             this.panel1.Controls.Add(this.studentbirthday);
@@ -102,6 +102,7 @@ namespace PHANMEMTHI
             // 
             this.hombut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hombut.Image = ((System.Drawing.Image)(resources.GetObject("hombut.Image")));
+            this.hombut.ImageRotate = 0F;
             this.hombut.Location = new System.Drawing.Point(940, 21);
             this.hombut.Name = "hombut";
             this.hombut.ShadowDecoration.Parent = this.hombut;
@@ -127,6 +128,7 @@ namespace PHANMEMTHI
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(19, 15);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -201,7 +203,7 @@ namespace PHANMEMTHI
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderRadius = 25;
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.Chonlop);
@@ -230,6 +232,8 @@ namespace PHANMEMTHI
             this.Chonlop.BorderRadius = 15;
             this.Chonlop.CheckedState.Parent = this.Chonlop;
             this.Chonlop.CustomImages.Parent = this.Chonlop;
+            this.Chonlop.DisabledState.Parent = this.Chonlop;
+            this.Chonlop.FillColor = System.Drawing.Color.Teal;
             this.Chonlop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chonlop.ForeColor = System.Drawing.Color.White;
             this.Chonlop.HoverState.Parent = this.Chonlop;
@@ -256,10 +260,10 @@ namespace PHANMEMTHI
             this.classinfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.classinfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.classinfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -283,7 +287,6 @@ namespace PHANMEMTHI
             this.classinfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.classinfo.Size = new System.Drawing.Size(602, 387);
             this.classinfo.TabIndex = 42;
-            this.classinfo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.classinfo.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -313,7 +316,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label12.ForeColor = System.Drawing.Color.Teal;
             this.label12.Location = new System.Drawing.Point(652, 146);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(189, 26);
@@ -325,7 +328,7 @@ namespace PHANMEMTHI
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(145, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(344, 26);
@@ -338,7 +341,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label15.ForeColor = System.Drawing.Color.Teal;
             this.label15.Location = new System.Drawing.Point(655, 375);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(46, 22);
@@ -351,7 +354,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(650, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 26);
@@ -364,7 +367,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label13.ForeColor = System.Drawing.Color.Teal;
             this.label13.Location = new System.Drawing.Point(655, 337);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(46, 22);
@@ -377,7 +380,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbsubject.AutoSize = true;
             this.lbsubject.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbsubject.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbsubject.ForeColor = System.Drawing.Color.Teal;
             this.lbsubject.Location = new System.Drawing.Point(653, 112);
             this.lbsubject.Name = "lbsubject";
             this.lbsubject.Size = new System.Drawing.Size(46, 22);
@@ -390,7 +393,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label14.ForeColor = System.Drawing.Color.Teal;
             this.label14.Location = new System.Drawing.Point(652, 299);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(185, 26);
@@ -403,7 +406,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(650, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(215, 26);
@@ -416,7 +419,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbclass.AutoSize = true;
             this.lbclass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbclass.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbclass.ForeColor = System.Drawing.Color.Teal;
             this.lbclass.Location = new System.Drawing.Point(655, 184);
             this.lbclass.Name = "lbclass";
             this.lbclass.Size = new System.Drawing.Size(46, 22);
@@ -429,7 +432,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbteacher.AutoSize = true;
             this.lbteacher.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbteacher.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbteacher.ForeColor = System.Drawing.Color.Teal;
             this.lbteacher.Location = new System.Drawing.Point(653, 259);
             this.lbteacher.Name = "lbteacher";
             this.lbteacher.Size = new System.Drawing.Size(46, 22);
@@ -442,7 +445,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label10.ForeColor = System.Drawing.Color.Teal;
             this.label10.Location = new System.Drawing.Point(922, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(108, 26);
@@ -455,7 +458,7 @@ namespace PHANMEMTHI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbcredit.AutoSize = true;
             this.lbcredit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcredit.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbcredit.ForeColor = System.Drawing.Color.Teal;
             this.lbcredit.Location = new System.Drawing.Point(924, 112);
             this.lbcredit.Name = "lbcredit";
             this.lbcredit.Size = new System.Drawing.Size(46, 22);

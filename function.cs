@@ -11,7 +11,7 @@ namespace PHANMEMTHI
     class function
     {
 
-        public static string ConnectionString = @"Data Source=DESKTOP-S4GU3GQ\SQLEXPRESS;Initial Catalog=phanmemthi;Integrated Security=True";
+        public static string ConnectionString = @"Data Source=DESKTOP-1LOB8EI;Initial Catalog=phanmemthi;Integrated Security=True";
 
         protected SqlConnection getconnect()
         {

@@ -55,7 +55,7 @@ namespace PHANMEMTHI
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BackColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Panel1.Controls.Add(this.logoutbutton);
             this.guna2Panel1.Controls.Add(this.logoutsymbol);
@@ -90,6 +90,7 @@ namespace PHANMEMTHI
             // 
             this.logoutsymbol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.logoutsymbol.Image = ((System.Drawing.Image)(resources.GetObject("logoutsymbol.Image")));
+            this.logoutsymbol.ImageRotate = 0F;
             this.logoutsymbol.Location = new System.Drawing.Point(634, 44);
             this.logoutsymbol.Name = "logoutsymbol";
             this.logoutsymbol.ShadowDecoration.Parent = this.logoutsymbol;
@@ -102,6 +103,7 @@ namespace PHANMEMTHI
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(13, 24);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -188,7 +190,8 @@ namespace PHANMEMTHI
             // 
             this.dotest.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dotest.Image = ((System.Drawing.Image)(resources.GetObject("dotest.Image")));
-            this.dotest.Location = new System.Drawing.Point(217, 195);
+            this.dotest.ImageRotate = 0F;
+            this.dotest.Location = new System.Drawing.Point(239, 195);
             this.dotest.Name = "dotest";
             this.dotest.ShadowDecoration.Parent = this.dotest;
             this.dotest.Size = new System.Drawing.Size(101, 93);
@@ -201,6 +204,7 @@ namespace PHANMEMTHI
             // 
             this.testresult.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.testresult.Image = ((System.Drawing.Image)(resources.GetObject("testresult.Image")));
+            this.testresult.ImageRotate = 0F;
             this.testresult.Location = new System.Drawing.Point(479, 195);
             this.testresult.Name = "testresult";
             this.testresult.ShadowDecoration.Parent = this.testresult;
@@ -216,8 +220,8 @@ namespace PHANMEMTHI
             this.lbdotest.AutoSize = true;
             this.lbdotest.BackColor = System.Drawing.Color.Transparent;
             this.lbdotest.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdotest.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lbdotest.Location = new System.Drawing.Point(223, 306);
+            this.lbdotest.ForeColor = System.Drawing.Color.Teal;
+            this.lbdotest.Location = new System.Drawing.Point(235, 306);
             this.lbdotest.Name = "lbdotest";
             this.lbdotest.Size = new System.Drawing.Size(105, 23);
             this.lbdotest.TabIndex = 29;
@@ -230,7 +234,7 @@ namespace PHANMEMTHI
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label12.ForeColor = System.Drawing.Color.Teal;
             this.label12.Location = new System.Drawing.Point(476, 306);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 23);

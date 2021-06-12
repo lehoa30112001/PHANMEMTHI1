@@ -56,6 +56,8 @@ namespace PHANMEMTHI.Login_Panel
             this.guna2Button6.BorderThickness = 2;
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.Teal;
             this.guna2Button6.Font = new System.Drawing.Font("Times New Roman", 10.8F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
@@ -75,6 +77,8 @@ namespace PHANMEMTHI.Login_Panel
             this.guna2Button5.BorderThickness = 2;
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.Teal;
             this.guna2Button5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
@@ -96,7 +100,7 @@ namespace PHANMEMTHI.Login_Panel
             this.showpass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.showpass.CheckMarkColor = System.Drawing.Color.DarkRed;
             this.showpass.Font = new System.Drawing.Font("Times New Roman", 7.8F);
-            this.showpass.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.showpass.ForeColor = System.Drawing.Color.Teal;
             this.showpass.Location = new System.Drawing.Point(616, 211);
             this.showpass.Name = "showpass";
             this.showpass.Size = new System.Drawing.Size(122, 20);
@@ -113,7 +117,7 @@ namespace PHANMEMTHI.Login_Panel
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(450, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 17);
@@ -145,7 +149,7 @@ namespace PHANMEMTHI.Login_Panel
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(450, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 17);
@@ -208,7 +212,7 @@ namespace PHANMEMTHI.Login_Panel
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(19, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(232, 25);
@@ -222,9 +226,10 @@ namespace PHANMEMTHI.Login_Panel
             this.svbutton.BorderThickness = 2;
             this.svbutton.CheckedState.Parent = this.svbutton;
             this.svbutton.CustomImages.Parent = this.svbutton;
+            this.svbutton.DisabledState.Parent = this.svbutton;
             this.svbutton.FillColor = System.Drawing.Color.White;
             this.svbutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.svbutton.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.svbutton.ForeColor = System.Drawing.Color.Teal;
             this.svbutton.HoverState.Parent = this.svbutton;
             this.svbutton.Location = new System.Drawing.Point(61, 184);
             this.svbutton.Name = "svbutton";
@@ -241,9 +246,10 @@ namespace PHANMEMTHI.Login_Panel
             this.gvbutton.BorderThickness = 2;
             this.gvbutton.CheckedState.Parent = this.gvbutton;
             this.gvbutton.CustomImages.Parent = this.gvbutton;
+            this.gvbutton.DisabledState.Parent = this.gvbutton;
             this.gvbutton.FillColor = System.Drawing.Color.White;
             this.gvbutton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvbutton.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gvbutton.ForeColor = System.Drawing.Color.Teal;
             this.gvbutton.HoverState.Parent = this.gvbutton;
             this.gvbutton.Location = new System.Drawing.Point(61, 112);
             this.gvbutton.Name = "gvbutton";
@@ -256,7 +262,7 @@ namespace PHANMEMTHI.Login_Panel
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderRadius = 25;
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Location = new System.Drawing.Point(12, 13);

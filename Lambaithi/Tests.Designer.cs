@@ -74,7 +74,7 @@ namespace PHANMEMTHI
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.hombut);
             this.panel1.Controls.Add(this.studentbirthday);
@@ -107,6 +107,7 @@ namespace PHANMEMTHI
             // 
             this.hombut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hombut.Image = ((System.Drawing.Image)(resources.GetObject("hombut.Image")));
+            this.hombut.ImageRotate = 0F;
             this.hombut.Location = new System.Drawing.Point(956, 18);
             this.hombut.Name = "hombut";
             this.hombut.ShadowDecoration.Parent = this.hombut;
@@ -132,6 +133,7 @@ namespace PHANMEMTHI
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(19, 15);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -206,7 +208,7 @@ namespace PHANMEMTHI
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(28, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 26);
@@ -218,7 +220,7 @@ namespace PHANMEMTHI
             this.lborder.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lborder.AutoSize = true;
             this.lborder.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lborder.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lborder.ForeColor = System.Drawing.Color.Teal;
             this.lborder.Location = new System.Drawing.Point(25, 310);
             this.lborder.Name = "lborder";
             this.lborder.Size = new System.Drawing.Size(70, 22);
@@ -230,7 +232,7 @@ namespace PHANMEMTHI
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(24, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 26);
@@ -242,7 +244,7 @@ namespace PHANMEMTHI
             this.lbtime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbtime.AutoSize = true;
             this.lbtime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtime.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbtime.ForeColor = System.Drawing.Color.Teal;
             this.lbtime.Location = new System.Drawing.Point(204, 312);
             this.lbtime.Name = "lbtime";
             this.lbtime.Size = new System.Drawing.Size(69, 22);
@@ -254,7 +256,7 @@ namespace PHANMEMTHI
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label10.ForeColor = System.Drawing.Color.Teal;
             this.label10.Location = new System.Drawing.Point(203, 274);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(110, 26);
@@ -266,7 +268,7 @@ namespace PHANMEMTHI
             this.lbstart.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbstart.AutoSize = true;
             this.lbstart.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstart.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbstart.ForeColor = System.Drawing.Color.Teal;
             this.lbstart.Location = new System.Drawing.Point(27, 502);
             this.lbstart.Name = "lbstart";
             this.lbstart.Size = new System.Drawing.Size(102, 22);
@@ -278,7 +280,7 @@ namespace PHANMEMTHI
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label12.ForeColor = System.Drawing.Color.Teal;
             this.label12.Location = new System.Drawing.Point(26, 464);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 26);
@@ -290,7 +292,7 @@ namespace PHANMEMTHI
             this.lbend.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbend.AutoSize = true;
             this.lbend.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbend.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbend.ForeColor = System.Drawing.Color.Teal;
             this.lbend.Location = new System.Drawing.Point(191, 504);
             this.lbend.Name = "lbend";
             this.lbend.Size = new System.Drawing.Size(102, 22);
@@ -302,7 +304,7 @@ namespace PHANMEMTHI
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label14.ForeColor = System.Drawing.Color.Teal;
             this.label14.Location = new System.Drawing.Point(190, 466);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(151, 26);
@@ -314,7 +316,7 @@ namespace PHANMEMTHI
             this.lblimit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblimit.AutoSize = true;
             this.lblimit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblimit.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblimit.ForeColor = System.Drawing.Color.Teal;
             this.lblimit.Location = new System.Drawing.Point(25, 410);
             this.lblimit.Name = "lblimit";
             this.lblimit.Size = new System.Drawing.Size(65, 22);
@@ -326,7 +328,7 @@ namespace PHANMEMTHI
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label16.ForeColor = System.Drawing.Color.Teal;
             this.label16.Location = new System.Drawing.Point(24, 372);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(166, 26);
@@ -375,7 +377,6 @@ namespace PHANMEMTHI
             this.testinfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.testinfo.Size = new System.Drawing.Size(675, 391);
             this.testinfo.TabIndex = 13;
-            this.testinfo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.testinfo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.testinfo.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.testinfo.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -404,7 +405,7 @@ namespace PHANMEMTHI
             this.lbnumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbnumber.AutoSize = true;
             this.lbnumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnumber.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lbnumber.ForeColor = System.Drawing.Color.Teal;
             this.lbnumber.Location = new System.Drawing.Point(204, 412);
             this.lbnumber.Name = "lbnumber";
             this.lbnumber.Size = new System.Drawing.Size(62, 22);
@@ -416,7 +417,7 @@ namespace PHANMEMTHI
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label18.ForeColor = System.Drawing.Color.Teal;
             this.label18.Location = new System.Drawing.Point(203, 374);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(79, 26);
@@ -428,7 +429,7 @@ namespace PHANMEMTHI
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(570, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(335, 26);
@@ -441,6 +442,8 @@ namespace PHANMEMTHI
             this.redobutton.BorderRadius = 20;
             this.redobutton.CheckedState.Parent = this.redobutton;
             this.redobutton.CustomImages.Parent = this.redobutton;
+            this.redobutton.DisabledState.Parent = this.redobutton;
+            this.redobutton.FillColor = System.Drawing.Color.Teal;
             this.redobutton.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redobutton.ForeColor = System.Drawing.Color.White;
             this.redobutton.HoverState.Parent = this.redobutton;
@@ -457,10 +460,11 @@ namespace PHANMEMTHI
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderRadius = 25;
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.testinfo);
+            this.guna2Panel1.ForeColor = System.Drawing.Color.Teal;
             this.guna2Panel1.Location = new System.Drawing.Point(361, 132);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
@@ -477,7 +481,7 @@ namespace PHANMEMTHI
             this.lbsubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lbsubject.FocusedState.Parent = this.lbsubject;
             this.lbsubject.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.lbsubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.lbsubject.ForeColor = System.Drawing.Color.Teal;
             this.lbsubject.HoverState.Parent = this.lbsubject;
             this.lbsubject.ItemHeight = 30;
             this.lbsubject.ItemsAppearance.Parent = this.lbsubject;
@@ -493,6 +497,8 @@ namespace PHANMEMTHI
             this.btLoc.BorderRadius = 15;
             this.btLoc.CheckedState.Parent = this.btLoc;
             this.btLoc.CustomImages.Parent = this.btLoc;
+            this.btLoc.DisabledState.Parent = this.btLoc;
+            this.btLoc.FillColor = System.Drawing.Color.Teal;
             this.btLoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLoc.ForeColor = System.Drawing.Color.White;
             this.btLoc.HoverState.Parent = this.btLoc;
@@ -510,6 +516,8 @@ namespace PHANMEMTHI
             this.btboloc.BorderRadius = 15;
             this.btboloc.CheckedState.Parent = this.btboloc;
             this.btboloc.CustomImages.Parent = this.btboloc;
+            this.btboloc.DisabledState.Parent = this.btboloc;
+            this.btboloc.FillColor = System.Drawing.Color.Teal;
             this.btboloc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btboloc.ForeColor = System.Drawing.Color.White;
             this.btboloc.HoverState.Parent = this.btboloc;

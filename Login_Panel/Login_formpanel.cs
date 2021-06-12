@@ -23,8 +23,8 @@ namespace PHANMEMTHI.Login_Panel
         private void gvbutton_Click(object sender, EventArgs e)
         {
             svbutton.FillColor = Color.White;
-            svbutton.ForeColor = Color.CornflowerBlue;
-            gvbutton.FillColor = Color.CornflowerBlue;
+            svbutton.ForeColor = Color.Teal;
+            gvbutton.FillColor = Color.Teal;
             gvbutton.ForeColor = Color.White;
             teacher = true;
             student = false;
@@ -33,8 +33,8 @@ namespace PHANMEMTHI.Login_Panel
         private void svbutton_Click(object sender, EventArgs e)
         {
             gvbutton.FillColor = Color.White;
-            gvbutton.ForeColor = Color.CornflowerBlue;
-            svbutton.FillColor = Color.CornflowerBlue;
+            gvbutton.ForeColor = Color.Teal;
+            svbutton.FillColor = Color.Teal;
             svbutton.ForeColor = Color.White;
             teacher = false;
             student = true;
