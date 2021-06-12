@@ -831,6 +831,8 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ExamChangeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tạo mới/Chỉnh sửa kỳ thi";

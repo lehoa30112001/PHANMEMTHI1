@@ -47,10 +47,10 @@ namespace PHANMEMTHI.Forms {
             this.Access_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Times = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvChoices = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Question_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.is_true = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoices)).BeginInit();
             this.panel1.SuspendLayout();
@@ -298,30 +298,6 @@ namespace PHANMEMTHI.Forms {
             this.dgvChoices.Size = new System.Drawing.Size(607, 425);
             this.dgvChoices.TabIndex = 3;
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cbExams);
-            this.panel1.Controls.Add(this.labelExamOrder);
-            this.panel1.Controls.Add(this.labelTime);
-            this.panel1.Controls.Add(this.labelQuestionAmount);
-            this.panel1.Controls.Add(this.labelLimitTimes);
-            this.panel1.Controls.Add(this.labelEndDate);
-            this.panel1.Controls.Add(this.labelStartDate);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.labelCreationDate);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(128, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(814, 132);
-            this.panel1.TabIndex = 4;
-            // 
             // Question_id
             // 
             this.Question_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -346,6 +322,30 @@ namespace PHANMEMTHI.Forms {
             this.Answer.ReadOnly = true;
             this.Answer.Width = 240;
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbExams);
+            this.panel1.Controls.Add(this.labelExamOrder);
+            this.panel1.Controls.Add(this.labelTime);
+            this.panel1.Controls.Add(this.labelQuestionAmount);
+            this.panel1.Controls.Add(this.labelLimitTimes);
+            this.panel1.Controls.Add(this.labelEndDate);
+            this.panel1.Controls.Add(this.labelStartDate);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.labelCreationDate);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(128, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(814, 132);
+            this.panel1.TabIndex = 4;
+            // 
             // ClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +355,7 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvChoices);
             this.Controls.Add(this.dgvResults);
+            this.MaximizeBox = false;
             this.Name = "ClassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kết quả theo lớp";

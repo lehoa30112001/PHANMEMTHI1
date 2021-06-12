@@ -68,6 +68,8 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSubjects);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ReportClassSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn lớp học cho báo cáo";

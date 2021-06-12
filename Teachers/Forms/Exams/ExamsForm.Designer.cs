@@ -27,12 +27,12 @@ namespace PHANMEMTHI.Forms {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvExams = new System.Windows.Forms.DataGridView();
-            this.buttonEdit = new System.Windows.Forms.Button();
-            this.buttonCreate = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.Exam_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Exam_order = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonCreate = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExams)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +72,27 @@ namespace PHANMEMTHI.Forms {
             this.dgvExams.TabIndex = 1;
             this.dgvExams.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnCellDoubleClick);
             this.dgvExams.SelectionChanged += new System.EventHandler(this.OnSelectionChanged);
+            // 
+            // Exam_id
+            // 
+            this.Exam_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Exam_id.HeaderText = "Mã kỳ thi";
+            this.Exam_id.Name = "Exam_id";
+            this.Exam_id.ReadOnly = true;
+            // 
+            // Class_id
+            // 
+            this.Class_id.HeaderText = "Mã lớp";
+            this.Class_id.Name = "Class_id";
+            this.Class_id.ReadOnly = true;
+            this.Class_id.Width = 125;
+            // 
+            // Exam_order
+            // 
+            this.Exam_order.HeaderText = "Loại kỳ thi";
+            this.Exam_order.Name = "Exam_order";
+            this.Exam_order.ReadOnly = true;
+            this.Exam_order.Width = 126;
             // 
             // buttonEdit
             // 
@@ -115,27 +136,6 @@ namespace PHANMEMTHI.Forms {
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.OnButtonBackClick);
             // 
-            // Exam_id
-            // 
-            this.Exam_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Exam_id.HeaderText = "Mã kỳ thi";
-            this.Exam_id.Name = "Exam_id";
-            this.Exam_id.ReadOnly = true;
-            // 
-            // Class_id
-            // 
-            this.Class_id.HeaderText = "Mã lớp";
-            this.Class_id.Name = "Class_id";
-            this.Class_id.ReadOnly = true;
-            this.Class_id.Width = 125;
-            // 
-            // Exam_order
-            // 
-            this.Exam_order.HeaderText = "Loại kỳ thi";
-            this.Exam_order.Name = "Exam_order";
-            this.Exam_order.ReadOnly = true;
-            this.Exam_order.Width = 126;
-            // 
             // ExamsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +147,8 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.dgvExams);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ExamsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách kỳ thi";
