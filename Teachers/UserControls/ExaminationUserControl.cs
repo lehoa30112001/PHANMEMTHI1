@@ -16,5 +16,6 @@ namespace PHANMEMTHI.Forms.Panels {
             MainTeacherForm.MainForm.Hide();
             new ExamsForm(MainTeacherForm.MainForm.TeacherID).ShowDialog();
         }
+
     }
 }

@@ -10,10 +10,13 @@ namespace PHANMEMTHI
 {
     class function
     {
+
+        public static string ConnectionString = @"Data Source=DESKTOP-S4GU3GQ\SQLEXPRESS;Initial Catalog=phanmemthi;Integrated Security=True";
+
         protected SqlConnection getconnect()
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = @"Data Source=DESKTOP-1LOB8EI;Initial Catalog=phanmemthi;Integrated Security=True";            
+            conn.ConnectionString = ConnectionString;
             return conn; 
         }
         

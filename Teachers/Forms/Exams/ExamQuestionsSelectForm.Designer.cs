@@ -37,25 +37,33 @@ namespace PHANMEMTHI.Forms {
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(448, 116);
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(190)))), ((int)(((byte)(194)))));
+            this.btnSelect.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.Location = new System.Drawing.Point(448, 125);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(158, 42);
             this.btnSelect.TabIndex = 10;
-            this.btnSelect.Text = "Lấy câu hỏi từ kỳ thi này";
-            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Text = "Chọn kỳ thi";
+            this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.OnButtonSelectClick);
             // 
             // dgvExams
             // 
             this.dgvExams.AllowUserToAddRows = false;
+            this.dgvExams.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvExams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvExams.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvExams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Exam_id,
             this.Class_id,
             this.Exam_order,
             this.Questions_amount});
-            this.dgvExams.Location = new System.Drawing.Point(12, 48);
+            this.dgvExams.Location = new System.Drawing.Point(12, 57);
             this.dgvExams.Name = "dgvExams";
+            this.dgvExams.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvExams.Size = new System.Drawing.Size(418, 235);
             this.dgvExams.TabIndex = 5;
             this.dgvExams.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnCellDoubleClick);
@@ -80,42 +88,51 @@ namespace PHANMEMTHI.Forms {
             // 
             // Questions_amount
             // 
+            this.Questions_amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Questions_amount.HeaderText = "Số câu";
             this.Questions_amount.Name = "Questions_amount";
             this.Questions_amount.ReadOnly = true;
-            this.Questions_amount.Width = 75;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 12);
+            this.label1.Font = new System.Drawing.Font("UTM Avo", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 18);
+            this.label1.Size = new System.Drawing.Size(174, 22);
             this.label1.TabIndex = 4;
             this.label1.Text = "Danh sách các kỳ thi";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(448, 189);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(190)))), ((int)(((byte)(194)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(448, 198);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 42);
             this.button1.TabIndex = 10;
             this.button1.Text = "Quay lại";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.OnBackButtonClick);
             // 
-            // ExamQuestionsSelect
+            // ExamQuestionsSelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 295);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(633, 304);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dgvExams);
             this.Controls.Add(this.label1);
-            this.Name = "ExamQuestionsSelect";
-            this.Text = "ExamQuestionsSelect";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ExamQuestionsSelectForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chọn câu hỏi từ kỳ thi";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dgvExams)).EndInit();
             this.ResumeLayout(false);
@@ -127,10 +144,10 @@ namespace PHANMEMTHI.Forms {
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.DataGridView dgvExams;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Exam_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Exam_order;
         private System.Windows.Forms.DataGridViewTextBoxColumn Questions_amount;
-        private System.Windows.Forms.Button button1;
     }
 }

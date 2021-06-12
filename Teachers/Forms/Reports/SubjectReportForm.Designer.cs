@@ -24,6 +24,7 @@ namespace PHANMEMTHI.Forms.Panels {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectReportForm));
             this.rptViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@ namespace PHANMEMTHI.Forms.Panels {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.rptViewer);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SubjectReportForm";
             this.Text = "Báo cáo theo môn học";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

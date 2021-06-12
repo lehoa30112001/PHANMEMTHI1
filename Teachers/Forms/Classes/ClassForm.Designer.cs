@@ -24,6 +24,7 @@ namespace PHANMEMTHI.Forms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassForm));
             this.label1 = new System.Windows.Forms.Label();
             this.cbExams = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,18 +42,16 @@ namespace PHANMEMTHI.Forms {
             this.label14 = new System.Windows.Forms.Label();
             this.labelQuestionAmount = new System.Windows.Forms.Label();
             this.dgvResults = new System.Windows.Forms.DataGridView();
-            this.dgvChoices = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonBack = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.Student_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Student_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Score = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Access_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Times = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvChoices = new System.Windows.Forms.DataGridView();
             this.Question_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.is_true = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Answer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoices)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,10 +60,10 @@ namespace PHANMEMTHI.Forms {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 14);
+            this.label1.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(64, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chọn kỳ thi";
             // 
@@ -72,7 +71,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.cbExams.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbExams.FormattingEnabled = true;
-            this.cbExams.Location = new System.Drawing.Point(121, 12);
+            this.cbExams.Location = new System.Drawing.Point(174, 14);
             this.cbExams.Name = "cbExams";
             this.cbExams.Size = new System.Drawing.Size(148, 21);
             this.cbExams.Sorted = true;
@@ -82,140 +81,140 @@ namespace PHANMEMTHI.Forms {
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 43);
+            this.label2.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(64, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ngày tạo:";
             // 
             // labelCreationDate
             // 
             this.labelCreationDate.AutoSize = true;
-            this.labelCreationDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCreationDate.Location = new System.Drawing.Point(118, 43);
+            this.labelCreationDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCreationDate.Location = new System.Drawing.Point(171, 44);
             this.labelCreationDate.Name = "labelCreationDate";
-            this.labelCreationDate.Size = new System.Drawing.Size(80, 17);
+            this.labelCreationDate.Size = new System.Drawing.Size(72, 17);
             this.labelCreationDate.TabIndex = 0;
             this.labelCreationDate.Text = "01/01/1970";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 73);
+            this.label4.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(64, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 16);
+            this.label4.Size = new System.Drawing.Size(90, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Thời gian thi:";
             // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(118, 73);
+            this.labelTime.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTime.Location = new System.Drawing.Point(171, 74);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(32, 17);
+            this.labelTime.Size = new System.Drawing.Size(29, 17);
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "300";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 103);
+            this.label6.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(64, 103);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 16);
+            this.label6.Size = new System.Drawing.Size(76, 18);
             this.label6.TabIndex = 0;
             this.label6.Text = "Loại kỳ thi:";
             // 
             // labelExamOrder
             // 
             this.labelExamOrder.AutoSize = true;
-            this.labelExamOrder.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExamOrder.Location = new System.Drawing.Point(118, 103);
+            this.labelExamOrder.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExamOrder.Location = new System.Drawing.Point(171, 104);
             this.labelExamOrder.Name = "labelExamOrder";
-            this.labelExamOrder.Size = new System.Drawing.Size(58, 17);
+            this.labelExamOrder.Size = new System.Drawing.Size(54, 17);
             this.labelExamOrder.TabIndex = 0;
             this.labelExamOrder.Text = "Giữa kỳ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(616, 14);
+            this.label8.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(559, 14);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 16);
+            this.label8.Size = new System.Drawing.Size(103, 18);
             this.label8.TabIndex = 0;
             this.label8.Text = "Ngày bắt đầu:";
             // 
             // labelStartDate
             // 
             this.labelStartDate.AutoSize = true;
-            this.labelStartDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStartDate.Location = new System.Drawing.Point(724, 14);
+            this.labelStartDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStartDate.Location = new System.Drawing.Point(666, 15);
             this.labelStartDate.Name = "labelStartDate";
-            this.labelStartDate.Size = new System.Drawing.Size(80, 17);
+            this.labelStartDate.Size = new System.Drawing.Size(72, 17);
             this.labelStartDate.TabIndex = 0;
             this.labelStartDate.Text = "01/01/1970";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(616, 43);
+            this.label10.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(559, 43);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 16);
+            this.label10.Size = new System.Drawing.Size(102, 18);
             this.label10.TabIndex = 0;
             this.label10.Text = "Ngày kết thúc:";
             // 
             // labelEndDate
             // 
             this.labelEndDate.AutoSize = true;
-            this.labelEndDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEndDate.Location = new System.Drawing.Point(724, 43);
+            this.labelEndDate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEndDate.Location = new System.Drawing.Point(666, 44);
             this.labelEndDate.Name = "labelEndDate";
-            this.labelEndDate.Size = new System.Drawing.Size(80, 17);
+            this.labelEndDate.Size = new System.Drawing.Size(72, 17);
             this.labelEndDate.TabIndex = 0;
             this.labelEndDate.Text = "01/01/1970";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(616, 73);
+            this.label12.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(559, 73);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 16);
+            this.label12.Size = new System.Drawing.Size(95, 18);
             this.label12.TabIndex = 0;
             this.label12.Text = "Giới hạn làm:";
             // 
             // labelLimitTimes
             // 
             this.labelLimitTimes.AutoSize = true;
-            this.labelLimitTimes.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLimitTimes.Location = new System.Drawing.Point(724, 73);
+            this.labelLimitTimes.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLimitTimes.Location = new System.Drawing.Point(666, 74);
             this.labelLimitTimes.Name = "labelLimitTimes";
-            this.labelLimitTimes.Size = new System.Drawing.Size(28, 17);
+            this.labelLimitTimes.Size = new System.Drawing.Size(26, 17);
             this.labelLimitTimes.TabIndex = 0;
             this.labelLimitTimes.Text = "10 ";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(616, 103);
+            this.label14.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(559, 103);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 16);
+            this.label14.Size = new System.Drawing.Size(80, 18);
             this.label14.TabIndex = 0;
             this.label14.Text = "Số câu hỏi:";
             // 
             // labelQuestionAmount
             // 
             this.labelQuestionAmount.AutoSize = true;
-            this.labelQuestionAmount.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuestionAmount.Location = new System.Drawing.Point(724, 103);
+            this.labelQuestionAmount.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuestionAmount.Location = new System.Drawing.Point(666, 104);
             this.labelQuestionAmount.Name = "labelQuestionAmount";
-            this.labelQuestionAmount.Size = new System.Drawing.Size(24, 17);
+            this.labelQuestionAmount.Size = new System.Drawing.Size(22, 17);
             this.labelQuestionAmount.TabIndex = 0;
             this.labelQuestionAmount.Text = "50";
             // 
@@ -223,6 +222,8 @@ namespace PHANMEMTHI.Forms {
             // 
             this.dgvResults.AllowUserToAddRows = false;
             this.dgvResults.AllowUserToDeleteRows = false;
+            this.dgvResults.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(214)))));
+            this.dgvResults.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Student_id,
@@ -232,66 +233,10 @@ namespace PHANMEMTHI.Forms {
             this.Times});
             this.dgvResults.Location = new System.Drawing.Point(13, 162);
             this.dgvResults.Name = "dgvResults";
+            this.dgvResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvResults.Size = new System.Drawing.Size(423, 425);
             this.dgvResults.TabIndex = 2;
             this.dgvResults.SelectionChanged += new System.EventHandler(this.OnSelectionChanged);
-            // 
-            // dgvChoices
-            // 
-            this.dgvChoices.AllowUserToAddRows = false;
-            this.dgvChoices.AllowUserToDeleteRows = false;
-            this.dgvChoices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvChoices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Question_id,
-            this.is_true,
-            this.Answer});
-            this.dgvChoices.Location = new System.Drawing.Point(442, 162);
-            this.dgvChoices.Name = "dgvChoices";
-            this.dgvChoices.Size = new System.Drawing.Size(607, 425);
-            this.dgvChoices.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cbExams);
-            this.panel1.Controls.Add(this.labelExamOrder);
-            this.panel1.Controls.Add(this.labelTime);
-            this.panel1.Controls.Add(this.labelQuestionAmount);
-            this.panel1.Controls.Add(this.labelLimitTimes);
-            this.panel1.Controls.Add(this.labelEndDate);
-            this.panel1.Controls.Add(this.labelStartDate);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.labelCreationDate);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(13, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(814, 132);
-            this.panel1.TabIndex = 4;
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(850, 88);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(199, 36);
-            this.buttonBack.TabIndex = 5;
-            this.buttonBack.Text = "Quay lại";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.OnButtonBackClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(850, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 36);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Làm mới";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Student_id
             // 
@@ -337,6 +282,23 @@ namespace PHANMEMTHI.Forms {
             this.Times.ReadOnly = true;
             this.Times.Width = 69;
             // 
+            // dgvChoices
+            // 
+            this.dgvChoices.AllowUserToAddRows = false;
+            this.dgvChoices.AllowUserToDeleteRows = false;
+            this.dgvChoices.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(212)))), ((int)(((byte)(214)))));
+            this.dgvChoices.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvChoices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChoices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Question_id,
+            this.is_true,
+            this.Answer});
+            this.dgvChoices.Location = new System.Drawing.Point(442, 162);
+            this.dgvChoices.Name = "dgvChoices";
+            this.dgvChoices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvChoices.Size = new System.Drawing.Size(607, 425);
+            this.dgvChoices.TabIndex = 3;
+            // 
             // Question_id
             // 
             this.Question_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -347,30 +309,55 @@ namespace PHANMEMTHI.Forms {
             // 
             // is_true
             // 
-            this.is_true.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.is_true.FillWeight = 45.68528F;
             this.is_true.HeaderText = "Kết quả";
             this.is_true.Name = "is_true";
             this.is_true.ReadOnly = true;
+            this.is_true.Width = 86;
             // 
             // Answer
             // 
-            this.Answer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Answer.FillWeight = 127.1574F;
             this.Answer.HeaderText = "Đã chọn";
             this.Answer.Name = "Answer";
             this.Answer.ReadOnly = true;
+            this.Answer.Width = 240;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cbExams);
+            this.panel1.Controls.Add(this.labelExamOrder);
+            this.panel1.Controls.Add(this.labelTime);
+            this.panel1.Controls.Add(this.labelQuestionAmount);
+            this.panel1.Controls.Add(this.labelLimitTimes);
+            this.panel1.Controls.Add(this.labelEndDate);
+            this.panel1.Controls.Add(this.labelStartDate);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.labelCreationDate);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(128, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(814, 132);
+            this.panel1.TabIndex = 4;
             // 
             // ClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1061, 595);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvChoices);
             this.Controls.Add(this.dgvResults);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ClassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kết quả theo lớp";
@@ -404,8 +391,6 @@ namespace PHANMEMTHI.Forms {
         private System.Windows.Forms.DataGridView dgvResults;
         private System.Windows.Forms.DataGridView dgvChoices;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Student_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Student_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Score;
