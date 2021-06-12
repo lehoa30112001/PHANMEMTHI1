@@ -71,6 +71,7 @@ namespace PHANMEMTHI.Forms {
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ReportClassSelect";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn lớp học cho báo cáo";
             this.ResumeLayout(false);

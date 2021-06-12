@@ -24,6 +24,7 @@ namespace PHANMEMTHI.Forms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassForm));
             this.label1 = new System.Windows.Forms.Label();
             this.cbExams = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -355,6 +356,7 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvChoices);
             this.Controls.Add(this.dgvResults);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ClassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

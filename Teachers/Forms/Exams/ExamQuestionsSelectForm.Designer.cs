@@ -130,6 +130,7 @@ namespace PHANMEMTHI.Forms {
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ExamQuestionsSelectForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn câu hỏi từ kỳ thi";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnFormClosed);

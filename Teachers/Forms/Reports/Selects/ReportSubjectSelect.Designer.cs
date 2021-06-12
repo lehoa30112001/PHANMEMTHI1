@@ -70,6 +70,7 @@ namespace PHANMEMTHI.Forms {
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ReportSubjectSelect";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn môn học cho báo cáo";
             this.ResumeLayout(false);
