@@ -92,6 +92,7 @@ namespace PHANMEMTHI.Forms {
 
         private void OnFormClose(object sender, FormClosedEventArgs e) {
             SQLConnections.Connection.Close();
+            Application.Exit();
         }
 
     }
