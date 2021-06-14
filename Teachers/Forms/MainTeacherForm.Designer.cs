@@ -26,13 +26,13 @@ namespace PHANMEMTHI.Forms {
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainTeacherForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.examUC = new PHANMEMTHI.Forms.Panels.ExaminationUserControl();
+            this.classUC = new PHANMEMTHI.Forms.Panels.ClassUserControl();
+            this.reportUC = new PHANMEMTHI.Forms.Panels.ReportUserControl();
             this.btnClass = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnExam = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.examUC = new PHANMEMTHI.Forms.Panels.ExaminationUserControl();
-            this.classUC = new PHANMEMTHI.Forms.Panels.ClassUserControl();
-            this.reportUC = new PHANMEMTHI.Forms.Panels.ReportUserControl();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +46,30 @@ namespace PHANMEMTHI.Forms {
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(775, 443);
             this.panel2.TabIndex = 2;
+            // 
+            // examUC
+            // 
+            this.examUC.Location = new System.Drawing.Point(-1, 3);
+            this.examUC.Name = "examUC";
+            this.examUC.Size = new System.Drawing.Size(776, 446);
+            this.examUC.TabIndex = 4;
+            // 
+            // classUC
+            // 
+            this.classUC.Location = new System.Drawing.Point(-3, 3);
+            this.classUC.Margin = new System.Windows.Forms.Padding(4);
+            this.classUC.Name = "classUC";
+            this.classUC.Size = new System.Drawing.Size(781, 437);
+            this.classUC.TabIndex = 1;
+            this.classUC.Click += new System.EventHandler(this.OnClassButtonClick);
+            // 
+            // reportUC
+            // 
+            this.reportUC.Location = new System.Drawing.Point(-1, 0);
+            this.reportUC.Margin = new System.Windows.Forms.Padding(4);
+            this.reportUC.Name = "reportUC";
+            this.reportUC.Size = new System.Drawing.Size(776, 443);
+            this.reportUC.TabIndex = 3;
             // 
             // btnClass
             // 
@@ -100,30 +124,6 @@ namespace PHANMEMTHI.Forms {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 70);
             this.panel1.TabIndex = 1;
-            // 
-            // examUC
-            // 
-            this.examUC.Location = new System.Drawing.Point(-1, 3);
-            this.examUC.Name = "examUC";
-            this.examUC.Size = new System.Drawing.Size(776, 446);
-            this.examUC.TabIndex = 4;
-            // 
-            // classUC
-            // 
-            this.classUC.Location = new System.Drawing.Point(-3, 3);
-            this.classUC.Margin = new System.Windows.Forms.Padding(4);
-            this.classUC.Name = "classUC";
-            this.classUC.Size = new System.Drawing.Size(781, 437);
-            this.classUC.TabIndex = 1;
-            this.classUC.Click += new System.EventHandler(this.OnClassButtonClick);
-            // 
-            // reportUC
-            // 
-            this.reportUC.Location = new System.Drawing.Point(-1, 0);
-            this.reportUC.Margin = new System.Windows.Forms.Padding(4);
-            this.reportUC.Name = "reportUC";
-            this.reportUC.Size = new System.Drawing.Size(776, 443);
-            this.reportUC.TabIndex = 3;
             // 
             // MainTeacherForm
             // 

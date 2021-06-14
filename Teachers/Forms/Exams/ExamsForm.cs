@@ -41,12 +41,12 @@ namespace PHANMEMTHI.Forms {
         }
 
         private void OnFormClosed(object sender, FormClosedEventArgs e) {
-            MainTeacherForm.MainForm.Show();
+            MainTeacherForm.MainForm.ShowAndUpdate();
         }
 
         private void OnButtonBackClick(object sender, EventArgs e) {
             this.Close();
-            MainTeacherForm.MainForm.Show();
+            MainTeacherForm.MainForm.ShowAndUpdate();
         }
 
         private void OnSelectionChanged(object sender, EventArgs e) {
@@ -61,7 +61,7 @@ namespace PHANMEMTHI.Forms {
         }
 
         private void OnFormClosing(object sender, FormClosingEventArgs e) {
-            MainTeacherForm.MainForm.Show();
+            MainTeacherForm.MainForm.ShowAndUpdate();
         }
 
         private void OnCreateButtonClick(object sender, EventArgs e) {
