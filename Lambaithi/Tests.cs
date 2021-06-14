@@ -141,5 +141,10 @@ namespace PHANMEMTHI
         {
             loaddata();
         }
+
+        private void Tests_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -66,6 +66,11 @@ namespace PHANMEMTHI
             loaddata();
         }
 
+        private void ShowExamResult_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void backbutton_Click(object sender, EventArgs e)
         {
             string query = "Select Class_id from Exams where Exam_id = '" + examid + "'";
@@ -80,13 +85,13 @@ namespace PHANMEMTHI
             }
             if (huongve == "dotest")
             {
-                this.Close();
+                this.Hide();
                 Tests te = new Tests(studentid);
                 te.Show();
             }    
             else if (huongve == "examinfo")
             {
-                this.Close();
+                this.Hide();
                 Class_Exam_Info ce = new Class_Exam_Info(class_id, studentid, stname.Text, birthday);
                 ce.Show();
             }

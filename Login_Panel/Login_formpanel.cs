@@ -84,7 +84,6 @@ namespace PHANMEMTHI.Login_Panel
                     Login.ActiveForm.Hide();
                     Student_Login stlogin = new Student_Login(userbox.Text);                    
                     stlogin.Show();
-
                 }
                 else
                 {

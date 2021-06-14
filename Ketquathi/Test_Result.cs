@@ -64,5 +64,10 @@ namespace PHANMEMTHI
             if (classinfo.Rows.Count > 0)
                 napdl(0);
         }
+
+        private void Test_Result_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

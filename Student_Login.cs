@@ -46,6 +46,16 @@ namespace PHANMEMTHI
             tr.Show();
         }
 
+        private void Student_Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Student_Login_Load(object sender, EventArgs e)
+        {
+            this.BringToFront();
+        }
+
         private void logoutbutton_Click(object sender, EventArgs e)
         {
             this.Hide();

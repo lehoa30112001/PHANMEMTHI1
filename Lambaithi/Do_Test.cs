@@ -291,6 +291,11 @@ namespace PHANMEMTHI
             }
         }
 
+        private void Do_Test_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void backpage_Click(object sender, EventArgs e)
         {
             currentpage--;

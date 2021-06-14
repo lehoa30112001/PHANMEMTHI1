@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmRptResuly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptResuly.Designer.cs">
+      <DependentUpon>FrmRptResuly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ketquathi\Class_Exam_Info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     <Compile Include="Ketquathi\Test_Result.Designer.cs">
       <DependentUpon>Test_Result.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmRptResuly.resx">
+      <DependentUpon>FrmRptResuly.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ketquathi\Class_Exam_Info.resx">
       <DependentUpon>Class_Exam_Info.cs</DependentUpon>
     </EmbeddedResource>
