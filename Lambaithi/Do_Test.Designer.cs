@@ -52,10 +52,7 @@ namespace PHANMEMTHI
             this.answer3 = new System.Windows.Forms.RadioButton();
             this.answer2 = new System.Windows.Forms.RadioButton();
             this.answer1 = new System.Windows.Forms.RadioButton();
-            this.lbquestion = new System.Windows.Forms.Label();
-            this.causo = new System.Windows.Forms.Label();
             this.elaptime = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.page = new System.Windows.Forms.Label();
@@ -82,6 +79,7 @@ namespace PHANMEMTHI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbquestion = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -276,16 +274,14 @@ namespace PHANMEMTHI
             this.guna2Panel1.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.guna2Panel1.BorderRadius = 30;
             this.guna2Panel1.BorderThickness = 3;
+            this.guna2Panel1.Controls.Add(this.lbquestion);
             this.guna2Panel1.Controls.Add(this.btnext);
             this.guna2Panel1.Controls.Add(this.btback);
             this.guna2Panel1.Controls.Add(this.answer4);
             this.guna2Panel1.Controls.Add(this.answer3);
             this.guna2Panel1.Controls.Add(this.answer2);
             this.guna2Panel1.Controls.Add(this.answer1);
-            this.guna2Panel1.Controls.Add(this.lbquestion);
-            this.guna2Panel1.Controls.Add(this.causo);
             this.guna2Panel1.Controls.Add(this.elaptime);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Location = new System.Drawing.Point(13, 132);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
@@ -332,7 +328,8 @@ namespace PHANMEMTHI
             // 
             // answer4
             // 
-            this.answer4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.answer4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answer4.AutoSize = true;
             this.answer4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer4.ForeColor = System.Drawing.Color.Teal;
@@ -348,7 +345,8 @@ namespace PHANMEMTHI
             // 
             // answer3
             // 
-            this.answer3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.answer3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answer3.AutoSize = true;
             this.answer3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer3.ForeColor = System.Drawing.Color.Teal;
@@ -364,7 +362,8 @@ namespace PHANMEMTHI
             // 
             // answer2
             // 
-            this.answer2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.answer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answer2.AutoSize = true;
             this.answer2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer2.ForeColor = System.Drawing.Color.Teal;
@@ -380,7 +379,8 @@ namespace PHANMEMTHI
             // 
             // answer1
             // 
-            this.answer1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.answer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answer1.AutoSize = true;
             this.answer1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1.ForeColor = System.Drawing.Color.Teal;
@@ -394,50 +394,17 @@ namespace PHANMEMTHI
             this.answer1.UseVisualStyleBackColor = true;
             this.answer1.Click += new System.EventHandler(this.answer1_Click);
             // 
-            // lbquestion
-            // 
-            this.lbquestion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbquestion.AutoSize = true;
-            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbquestion.ForeColor = System.Drawing.Color.Teal;
-            this.lbquestion.Location = new System.Drawing.Point(126, 63);
-            this.lbquestion.Name = "lbquestion";
-            this.lbquestion.Padding = new System.Windows.Forms.Padding(0, 0, 450, 0);
-            this.lbquestion.Size = new System.Drawing.Size(521, 22);
-            this.lbquestion.TabIndex = 8;
-            this.lbquestion.Text = "Câu hỏi";
-            // 
-            // causo
-            // 
-            this.causo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.causo.AutoSize = true;
-            this.causo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.causo.ForeColor = System.Drawing.Color.Teal;
-            this.causo.Location = new System.Drawing.Point(52, 61);
-            this.causo.Name = "causo";
-            this.causo.Size = new System.Drawing.Size(79, 23);
-            this.causo.TabIndex = 7;
-            this.causo.Text = "Câu số: ";
-            // 
             // elaptime
             // 
             this.elaptime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.elaptime.AutoSize = true;
             this.elaptime.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.elaptime.ForeColor = System.Drawing.Color.Teal;
-            this.elaptime.Location = new System.Drawing.Point(596, 20);
+            this.elaptime.Location = new System.Drawing.Point(568, 21);
             this.elaptime.Name = "elaptime";
             this.elaptime.Size = new System.Drawing.Size(84, 27);
             this.elaptime.TabIndex = 5;
             this.elaptime.Text = "0:30:30";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Location = new System.Drawing.Point(48, 50);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(632, 80);
-            this.guna2Panel2.TabIndex = 17;
             // 
             // Panel2
             // 
@@ -854,6 +821,43 @@ namespace PHANMEMTHI
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lbquestion
+            // 
+            this.lbquestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbquestion.AutoSize = true;
+            this.lbquestion.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.lbquestion.BackColor = System.Drawing.SystemColors.Control;
+            this.lbquestion.BorderThickness = 0;
+            this.lbquestion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbquestion.DefaultText = "";
+            this.lbquestion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lbquestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lbquestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lbquestion.DisabledState.Parent = this.lbquestion;
+            this.lbquestion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lbquestion.FillColor = System.Drawing.SystemColors.Control;
+            this.lbquestion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lbquestion.FocusedState.Parent = this.lbquestion;
+            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lbquestion.ForeColor = System.Drawing.Color.Teal;
+            this.lbquestion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lbquestion.HoverState.Parent = this.lbquestion;
+            this.lbquestion.Location = new System.Drawing.Point(62, 61);
+            this.lbquestion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.lbquestion.MaximumSize = new System.Drawing.Size(1320, 150);
+            this.lbquestion.MaxLength = 500000;
+            this.lbquestion.Multiline = true;
+            this.lbquestion.Name = "lbquestion";
+            this.lbquestion.PasswordChar = '\0';
+            this.lbquestion.PlaceholderText = "";
+            this.lbquestion.ReadOnly = true;
+            this.lbquestion.SelectedText = "";
+            this.lbquestion.ShadowDecoration.Parent = this.lbquestion;
+            this.lbquestion.Size = new System.Drawing.Size(569, 85);
+            this.lbquestion.TabIndex = 0;
+            this.lbquestion.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
             // Do_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -862,7 +866,6 @@ namespace PHANMEMTHI
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Do_Test";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -898,8 +901,6 @@ namespace PHANMEMTHI
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label elaptime;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lbquestion;
-        private System.Windows.Forms.Label causo;
         private System.Windows.Forms.Label page;
         private Guna.UI2.WinForms.Guna2ImageButton nextpage;
         private Guna.UI2.WinForms.Guna2ImageButton backpage;
@@ -933,6 +934,6 @@ namespace PHANMEMTHI
         private Guna.UI2.WinForms.Guna2Button btnext;
         private Guna.UI2.WinForms.Guna2Button btback;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2TextBox lbquestion;
     }
 }

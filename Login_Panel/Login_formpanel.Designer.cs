@@ -295,6 +295,7 @@ namespace PHANMEMTHI.Login_Panel
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Login_formpanel";
             this.Size = new System.Drawing.Size(806, 340);
+            this.Load += new System.EventHandler(this.Login_formpanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -97,5 +97,11 @@ namespace PHANMEMTHI.Login_Panel
                 
             
         } //Đăng nhập
+
+        private void Login_formpanel_Load(object sender, EventArgs e)
+        {
+            svbutton.FillColor = Color.Teal;
+            svbutton.ForeColor = Color.White;
+        }
     } 
 }

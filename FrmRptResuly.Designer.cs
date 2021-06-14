@@ -52,7 +52,7 @@ namespace PHANMEMTHI
             this.ClientSize = new System.Drawing.Size(1093, 542);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FrmRptResult";
-            this.Text = "Báo cáo Kết Quả";
+            this.Text = "Báo Cáo Kết Quả";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

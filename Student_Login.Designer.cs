@@ -69,7 +69,7 @@ namespace PHANMEMTHI
             this.guna2Panel1.Location = new System.Drawing.Point(-1, -1);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(806, 119);
+            this.guna2Panel1.Size = new System.Drawing.Size(934, 119);
             this.guna2Panel1.TabIndex = 1;
             // 
             // logoutbutton
@@ -79,7 +79,7 @@ namespace PHANMEMTHI
             this.logoutbutton.BackColor = System.Drawing.Color.Transparent;
             this.logoutbutton.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.logoutbutton.ForeColor = System.Drawing.Color.White;
-            this.logoutbutton.Location = new System.Drawing.Point(680, 53);
+            this.logoutbutton.Location = new System.Drawing.Point(808, 53);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(109, 25);
             this.logoutbutton.TabIndex = 19;
@@ -91,7 +91,7 @@ namespace PHANMEMTHI
             this.logoutsymbol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.logoutsymbol.Image = ((System.Drawing.Image)(resources.GetObject("logoutsymbol.Image")));
             this.logoutsymbol.ImageRotate = 0F;
-            this.logoutsymbol.Location = new System.Drawing.Point(634, 44);
+            this.logoutsymbol.Location = new System.Drawing.Point(762, 44);
             this.logoutsymbol.Name = "logoutsymbol";
             this.logoutsymbol.ShadowDecoration.Parent = this.logoutsymbol;
             this.logoutsymbol.Size = new System.Drawing.Size(40, 34);
@@ -119,7 +119,7 @@ namespace PHANMEMTHI
             this.studentbirthday.BackColor = System.Drawing.Color.Transparent;
             this.studentbirthday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentbirthday.ForeColor = System.Drawing.Color.White;
-            this.studentbirthday.Location = new System.Drawing.Point(487, 68);
+            this.studentbirthday.Location = new System.Drawing.Point(569, 68);
             this.studentbirthday.Name = "studentbirthday";
             this.studentbirthday.Size = new System.Drawing.Size(103, 22);
             this.studentbirthday.TabIndex = 34;
@@ -180,7 +180,7 @@ namespace PHANMEMTHI
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(377, 68);
+            this.label8.Location = new System.Drawing.Point(459, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 23);
             this.label8.TabIndex = 24;
@@ -191,7 +191,7 @@ namespace PHANMEMTHI
             this.dotest.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dotest.Image = ((System.Drawing.Image)(resources.GetObject("dotest.Image")));
             this.dotest.ImageRotate = 0F;
-            this.dotest.Location = new System.Drawing.Point(239, 195);
+            this.dotest.Location = new System.Drawing.Point(303, 195);
             this.dotest.Name = "dotest";
             this.dotest.ShadowDecoration.Parent = this.dotest;
             this.dotest.Size = new System.Drawing.Size(101, 93);
@@ -205,7 +205,7 @@ namespace PHANMEMTHI
             this.testresult.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.testresult.Image = ((System.Drawing.Image)(resources.GetObject("testresult.Image")));
             this.testresult.ImageRotate = 0F;
-            this.testresult.Location = new System.Drawing.Point(479, 195);
+            this.testresult.Location = new System.Drawing.Point(543, 195);
             this.testresult.Name = "testresult";
             this.testresult.ShadowDecoration.Parent = this.testresult;
             this.testresult.Size = new System.Drawing.Size(101, 93);
@@ -221,7 +221,7 @@ namespace PHANMEMTHI
             this.lbdotest.BackColor = System.Drawing.Color.Transparent;
             this.lbdotest.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbdotest.ForeColor = System.Drawing.Color.Teal;
-            this.lbdotest.Location = new System.Drawing.Point(235, 306);
+            this.lbdotest.Location = new System.Drawing.Point(299, 306);
             this.lbdotest.Name = "lbdotest";
             this.lbdotest.Size = new System.Drawing.Size(105, 23);
             this.lbdotest.TabIndex = 29;
@@ -235,7 +235,7 @@ namespace PHANMEMTHI
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Teal;
-            this.label12.Location = new System.Drawing.Point(476, 306);
+            this.label12.Location = new System.Drawing.Point(540, 306);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 23);
             this.label12.TabIndex = 31;
@@ -246,7 +246,7 @@ namespace PHANMEMTHI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(928, 422);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lbdotest);
             this.Controls.Add(this.testresult);
@@ -254,8 +254,7 @@ namespace PHANMEMTHI
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Student_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Student_Login";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Text = "Trang chủ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Student_Login_FormClosed);
             this.Load += new System.EventHandler(this.Student_Login_Load);
             this.guna2Panel1.ResumeLayout(false);

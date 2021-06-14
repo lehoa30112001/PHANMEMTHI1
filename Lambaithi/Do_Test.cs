@@ -70,8 +70,8 @@ namespace PHANMEMTHI
         } //Load cau tra loi vao bang answer
         private void question_answer(int number)
         {
-            causo.Text = "Câu " + (number + 1).ToString();
-            lbquestion.Text = question.Rows[number][1].ToString();
+            string x = "Câu " + (number + 1).ToString();
+            lbquestion.Text = x + ": " + question.Rows[number][1].ToString();
             string questionid = question.Rows[number][0].ToString();
             loadanswer(questionid);
             if (danhap[number] == false)
@@ -256,7 +256,7 @@ namespace PHANMEMTHI
                     }
                     else
                     {
-                        m = 59;
+                        m = 59; s = 59;
                         h--;
                     }
                 }
@@ -284,7 +284,7 @@ namespace PHANMEMTHI
                         b.Text = ((number - 1) * 20 + i).ToString();
                         if (danhap[Convert.ToInt32(b.Text.ToString()) - 1]  == false)
                             b.BackColor = Color.White;
-                        else b.BackColor = Color.Red;
+                        else b.BackColor = Color.PaleTurquoise;
                     }
                 }
                 page.Text = number + "/" + totalpage;
@@ -294,6 +294,11 @@ namespace PHANMEMTHI
         private void Do_Test_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void backpage_Click(object sender, EventArgs e)
