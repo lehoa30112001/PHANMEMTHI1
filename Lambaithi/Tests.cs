@@ -48,7 +48,7 @@ namespace PHANMEMTHI
         }
         private void loaddata()
         {
-            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id";
+            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time/60 as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id";
             DataTable dt = fn.getdt(query);
             testinfo.DataSource = dt;
         } // Load dữ liệu vào Data Grid
@@ -75,7 +75,7 @@ namespace PHANMEMTHI
             {
                 lbsubject.Text = dr1["Subject_name"].ToString();
                 lborder.Text = dr1["Exam_order"].ToString();
-                lbtime.Text = dr1["Time"].ToString() + "phút";
+                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + "phút";
                 string a = dr1["Start_date"].ToString();
                 startdate = Convert.ToDateTime(dr1["Start_date"].ToString());
                 lbstart.Text = a.Substring(0, 10);

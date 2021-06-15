@@ -100,8 +100,7 @@ namespace PHANMEMTHI.Login_Panel
 
         private void Login_formpanel_Load(object sender, EventArgs e)
         {
-            svbutton.FillColor = Color.Teal;
-            svbutton.ForeColor = Color.White;
+            svbutton.PerformClick();
         }
     } 
 }

@@ -99,7 +99,7 @@ namespace PHANMEMTHI
 
         private void homebutton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Student_Login stlogin = new Student_Login(studentid);
             stlogin.Show();
         }

@@ -44,8 +44,7 @@ namespace PHANMEMTHI
 
         private void Login_Load(object sender, EventArgs e)
         {
-            formlogin.FillColor = Color.White;
-            formlogin.ForeColor = Color.Teal;
+            formlogin.PerformClick();
         }
     }
     }

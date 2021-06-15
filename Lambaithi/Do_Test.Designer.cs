@@ -856,7 +856,6 @@ namespace PHANMEMTHI
             this.lbquestion.ShadowDecoration.Parent = this.lbquestion;
             this.lbquestion.Size = new System.Drawing.Size(569, 85);
             this.lbquestion.TabIndex = 0;
-            this.lbquestion.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // Do_Test
             // 
