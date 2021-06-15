@@ -127,6 +127,7 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dgvExams);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ExamQuestionsSelectForm";
