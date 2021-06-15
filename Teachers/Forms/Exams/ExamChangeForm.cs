@@ -598,7 +598,7 @@ namespace PHANMEMTHI.Forms {
         }
 
         private void OnFormClosed(object sender, FormClosedEventArgs e) {
-            MainTeacherForm.MainForm.Show();
+            MainTeacherForm.MainForm.ShowAndUpdate();
         }
 
         private void OnQuestionsSelectionChanged(object sender, EventArgs e) {

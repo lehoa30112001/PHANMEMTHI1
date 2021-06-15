@@ -67,6 +67,7 @@ namespace PHANMEMTHI.Forms {
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSubjects);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ReportSubjectSelect";

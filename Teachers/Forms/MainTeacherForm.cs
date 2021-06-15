@@ -37,11 +37,11 @@ namespace PHANMEMTHI.Forms {
             this.TeacherID = id;
             this.Teacher = SQLConnections.QueryTeacher(id);
 
+            // Current
+            this.SetCurrentExams();
+
             // Change title
             this.Text = Teacher.ID.ToUpper() + " - GV " + Teacher.Name;
-
-            // Change ExamUserControl
-            this.examUC.labelCurrentExams.Text = SQLConnections.QueryCurrentExamAmount(id) + "";
 
             // Load Classes
             this.LoadClasses();
@@ -95,5 +95,14 @@ namespace PHANMEMTHI.Forms {
             Application.Exit();
         }
 
+        public void ShowAndUpdate() {
+            this.Show();
+            this.SetCurrentExams();
+        }
+
+        public void SetCurrentExams() {
+            this.examUC.labelCurrentExams.Text = SQLConnections.QueryCurrentExamAmount(this.TeacherID) + "";
+            this.examUC.labelCurrentExams.Left = (this.examUC.Width - this.examUC.labelCurrentExams.Width) / 2;
+        }
     }
 }

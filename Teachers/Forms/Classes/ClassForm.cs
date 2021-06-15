@@ -109,11 +109,12 @@ namespace PHANMEMTHI.Forms {
         }
 
         private void OnFormClose(object sender, FormClosedEventArgs e) {
-            MainTeacherForm.MainForm.Show();
+            MainTeacherForm.MainForm.ShowAndUpdate();
         }
 
         private void OnButtonBackClick(object sender, EventArgs e) {
             this.Close();
         }
+
     }
 }
