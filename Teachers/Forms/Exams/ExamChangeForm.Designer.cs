@@ -85,6 +85,20 @@ namespace PHANMEMTHI.Forms {
             this.button7 = new System.Windows.Forms.Button();
             this.btnQTemplateDownload = new System.Windows.Forms.Button();
             this.btnQDownload = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cbSTHour = new System.Windows.Forms.ComboBox();
+            this.cbSTMinute = new System.Windows.Forms.ComboBox();
+            this.cbSTSecond = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cbEDHour = new System.Windows.Forms.ComboBox();
+            this.cbEDMinute = new System.Windows.Forms.ComboBox();
+            this.cbEDSecond = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuestions)).BeginInit();
@@ -186,9 +200,9 @@ namespace PHANMEMTHI.Forms {
             this.label6.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(439, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 18);
+            this.label6.Size = new System.Drawing.Size(77, 18);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Ngày bắt đầu";
+            this.label6.Text = "Bắt đầu thi";
             // 
             // cbSTDay
             // 
@@ -244,17 +258,17 @@ namespace PHANMEMTHI.Forms {
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(439, 53);
+            this.label9.Location = new System.Drawing.Point(439, 56);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 18);
+            this.label9.Size = new System.Drawing.Size(79, 18);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Ngày kết thúc";
+            this.label9.Text = "Kết thúc thi";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(597, 53);
+            this.label10.Location = new System.Drawing.Point(597, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(13, 20);
             this.label10.TabIndex = 0;
@@ -264,7 +278,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(671, 53);
+            this.label11.Location = new System.Drawing.Point(671, 56);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(13, 20);
             this.label11.TabIndex = 0;
@@ -274,7 +288,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.cbEDDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEDDay.FormattingEnabled = true;
-            this.cbEDDay.Location = new System.Drawing.Point(545, 52);
+            this.cbEDDay.Location = new System.Drawing.Point(545, 55);
             this.cbEDDay.Name = "cbEDDay";
             this.cbEDDay.Size = new System.Drawing.Size(46, 21);
             this.cbEDDay.TabIndex = 2;
@@ -284,7 +298,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.cbEDMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEDMonth.FormattingEnabled = true;
-            this.cbEDMonth.Location = new System.Drawing.Point(616, 52);
+            this.cbEDMonth.Location = new System.Drawing.Point(616, 55);
             this.cbEDMonth.Name = "cbEDMonth";
             this.cbEDMonth.Size = new System.Drawing.Size(46, 21);
             this.cbEDMonth.TabIndex = 2;
@@ -294,7 +308,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.cbEDYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEDYear.FormattingEnabled = true;
-            this.cbEDYear.Location = new System.Drawing.Point(690, 52);
+            this.cbEDYear.Location = new System.Drawing.Point(690, 55);
             this.cbEDYear.Name = "cbEDYear";
             this.cbEDYear.Size = new System.Drawing.Size(67, 21);
             this.cbEDYear.TabIndex = 2;
@@ -347,7 +361,11 @@ namespace PHANMEMTHI.Forms {
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.buttonLimit);
+            this.panel1.Controls.Add(this.cbEDSecond);
+            this.panel1.Controls.Add(this.cbSTSecond);
+            this.panel1.Controls.Add(this.cbEDMinute);
             this.panel1.Controls.Add(this.cbTASecond);
+            this.panel1.Controls.Add(this.cbSTMinute);
             this.panel1.Controls.Add(this.cbLimitTimes);
             this.panel1.Controls.Add(this.cbTAMinute);
             this.panel1.Controls.Add(this.cbEDYear);
@@ -356,17 +374,27 @@ namespace PHANMEMTHI.Forms {
             this.panel1.Controls.Add(this.cbSTMonth);
             this.panel1.Controls.Add(this.cbOrder);
             this.panel1.Controls.Add(this.cbEDDay);
+            this.panel1.Controls.Add(this.cbEDHour);
             this.panel1.Controls.Add(this.cbSTDay);
+            this.panel1.Controls.Add(this.cbSTHour);
+            this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.cbQuestionAmount);
+            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.cbTAHour);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cbClass);
+            this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.labelLimitTimes);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label16);
@@ -378,7 +406,7 @@ namespace PHANMEMTHI.Forms {
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(8, 18);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(773, 149);
+            this.panel1.Size = new System.Drawing.Size(1039, 149);
             this.panel1.TabIndex = 4;
             // 
             // cbOrder
@@ -389,7 +417,7 @@ namespace PHANMEMTHI.Forms {
             "Bài tập",
             "Giữa kỳ",
             "Cuối kỳ"});
-            this.cbOrder.Location = new System.Drawing.Point(545, 82);
+            this.cbOrder.Location = new System.Drawing.Point(545, 85);
             this.cbOrder.Name = "cbOrder";
             this.cbOrder.Size = new System.Drawing.Size(117, 21);
             this.cbOrder.TabIndex = 2;
@@ -419,7 +447,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(439, 83);
+            this.label16.Location = new System.Drawing.Point(439, 86);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(72, 18);
             this.label16.TabIndex = 0;
@@ -467,7 +495,7 @@ namespace PHANMEMTHI.Forms {
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(8, 189);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(772, 436);
+            this.panel2.Size = new System.Drawing.Size(1039, 436);
             this.panel2.TabIndex = 6;
             // 
             // btnQSave
@@ -476,7 +504,7 @@ namespace PHANMEMTHI.Forms {
             this.btnQSave.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnQSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQSave.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQSave.Location = new System.Drawing.Point(241, 344);
+            this.btnQSave.Location = new System.Drawing.Point(324, 344);
             this.btnQSave.Name = "btnQSave";
             this.btnQSave.Size = new System.Drawing.Size(100, 36);
             this.btnQSave.TabIndex = 4;
@@ -508,7 +536,7 @@ namespace PHANMEMTHI.Forms {
             this.btnExamImport.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExamImport.Location = new System.Drawing.Point(7, 386);
             this.btnExamImport.Name = "btnExamImport";
-            this.btnExamImport.Size = new System.Drawing.Size(334, 36);
+            this.btnExamImport.Size = new System.Drawing.Size(417, 36);
             this.btnExamImport.TabIndex = 4;
             this.btnExamImport.TabStop = false;
             this.btnExamImport.Text = "Lấy câu hỏi từ kỳ thi khác";
@@ -534,7 +562,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.btnIsTrue5.AutoSize = true;
             this.btnIsTrue5.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIsTrue5.Location = new System.Drawing.Point(367, 383);
+            this.btnIsTrue5.Location = new System.Drawing.Point(447, 383);
             this.btnIsTrue5.Name = "btnIsTrue5";
             this.btnIsTrue5.Size = new System.Drawing.Size(54, 19);
             this.btnIsTrue5.TabIndex = 2;
@@ -545,7 +573,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.btnIsTrue4.AutoSize = true;
             this.btnIsTrue4.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIsTrue4.Location = new System.Drawing.Point(367, 321);
+            this.btnIsTrue4.Location = new System.Drawing.Point(447, 321);
             this.btnIsTrue4.Name = "btnIsTrue4";
             this.btnIsTrue4.Size = new System.Drawing.Size(54, 19);
             this.btnIsTrue4.TabIndex = 2;
@@ -556,7 +584,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.btnIsTrue3.AutoSize = true;
             this.btnIsTrue3.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIsTrue3.Location = new System.Drawing.Point(367, 259);
+            this.btnIsTrue3.Location = new System.Drawing.Point(447, 259);
             this.btnIsTrue3.Name = "btnIsTrue3";
             this.btnIsTrue3.Size = new System.Drawing.Size(54, 19);
             this.btnIsTrue3.TabIndex = 2;
@@ -567,7 +595,7 @@ namespace PHANMEMTHI.Forms {
             // 
             this.btnIsTrue2.AutoSize = true;
             this.btnIsTrue2.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIsTrue2.Location = new System.Drawing.Point(367, 197);
+            this.btnIsTrue2.Location = new System.Drawing.Point(447, 197);
             this.btnIsTrue2.Name = "btnIsTrue2";
             this.btnIsTrue2.Size = new System.Drawing.Size(54, 19);
             this.btnIsTrue2.TabIndex = 2;
@@ -579,7 +607,7 @@ namespace PHANMEMTHI.Forms {
             this.btnIsTrue1.AutoSize = true;
             this.btnIsTrue1.Checked = true;
             this.btnIsTrue1.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIsTrue1.Location = new System.Drawing.Point(367, 135);
+            this.btnIsTrue1.Location = new System.Drawing.Point(447, 135);
             this.btnIsTrue1.Name = "btnIsTrue1";
             this.btnIsTrue1.Size = new System.Drawing.Size(54, 19);
             this.btnIsTrue1.TabIndex = 2;
@@ -592,9 +620,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbAnswer5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbAnswer5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbAnswer5.Font = new System.Drawing.Font("Arial", 9F);
-            this.rtbAnswer5.Location = new System.Drawing.Point(424, 363);
+            this.rtbAnswer5.Location = new System.Drawing.Point(522, 363);
             this.rtbAnswer5.Name = "rtbAnswer5";
-            this.rtbAnswer5.Size = new System.Drawing.Size(334, 56);
+            this.rtbAnswer5.Size = new System.Drawing.Size(508, 56);
             this.rtbAnswer5.TabIndex = 6;
             this.rtbAnswer5.Text = "";
             this.rtbAnswer5.Enter += new System.EventHandler(this.OnQARTBEnter);
@@ -605,9 +633,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbAnswer4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbAnswer4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbAnswer4.Font = new System.Drawing.Font("Arial", 9F);
-            this.rtbAnswer4.Location = new System.Drawing.Point(424, 301);
+            this.rtbAnswer4.Location = new System.Drawing.Point(522, 301);
             this.rtbAnswer4.Name = "rtbAnswer4";
-            this.rtbAnswer4.Size = new System.Drawing.Size(334, 56);
+            this.rtbAnswer4.Size = new System.Drawing.Size(508, 56);
             this.rtbAnswer4.TabIndex = 5;
             this.rtbAnswer4.Text = "";
             this.rtbAnswer4.Enter += new System.EventHandler(this.OnQARTBEnter);
@@ -618,9 +646,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbAnswer3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbAnswer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbAnswer3.Font = new System.Drawing.Font("Arial", 9F);
-            this.rtbAnswer3.Location = new System.Drawing.Point(424, 239);
+            this.rtbAnswer3.Location = new System.Drawing.Point(522, 239);
             this.rtbAnswer3.Name = "rtbAnswer3";
-            this.rtbAnswer3.Size = new System.Drawing.Size(334, 56);
+            this.rtbAnswer3.Size = new System.Drawing.Size(508, 56);
             this.rtbAnswer3.TabIndex = 4;
             this.rtbAnswer3.Text = "";
             this.rtbAnswer3.Enter += new System.EventHandler(this.OnQARTBEnter);
@@ -631,9 +659,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbAnswer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbAnswer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbAnswer2.Font = new System.Drawing.Font("Arial", 9F);
-            this.rtbAnswer2.Location = new System.Drawing.Point(424, 177);
+            this.rtbAnswer2.Location = new System.Drawing.Point(522, 177);
             this.rtbAnswer2.Name = "rtbAnswer2";
-            this.rtbAnswer2.Size = new System.Drawing.Size(334, 56);
+            this.rtbAnswer2.Size = new System.Drawing.Size(508, 56);
             this.rtbAnswer2.TabIndex = 3;
             this.rtbAnswer2.Text = "";
             this.rtbAnswer2.Enter += new System.EventHandler(this.OnQARTBEnter);
@@ -644,9 +672,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbAnswer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbAnswer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbAnswer1.Font = new System.Drawing.Font("Arial", 9F);
-            this.rtbAnswer1.Location = new System.Drawing.Point(424, 115);
+            this.rtbAnswer1.Location = new System.Drawing.Point(522, 115);
             this.rtbAnswer1.Name = "rtbAnswer1";
-            this.rtbAnswer1.Size = new System.Drawing.Size(334, 56);
+            this.rtbAnswer1.Size = new System.Drawing.Size(508, 56);
             this.rtbAnswer1.TabIndex = 2;
             this.rtbAnswer1.Text = "";
             this.rtbAnswer1.Enter += new System.EventHandler(this.OnQARTBEnter);
@@ -657,9 +685,9 @@ namespace PHANMEMTHI.Forms {
             this.rtbQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
             this.rtbQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbQuestion.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbQuestion.Location = new System.Drawing.Point(346, 13);
+            this.rtbQuestion.Location = new System.Drawing.Point(442, 13);
             this.rtbQuestion.Name = "rtbQuestion";
-            this.rtbQuestion.Size = new System.Drawing.Size(412, 96);
+            this.rtbQuestion.Size = new System.Drawing.Size(588, 96);
             this.rtbQuestion.TabIndex = 1;
             this.rtbQuestion.Text = "Bài thơ: “Gạo đem vào giã bao đau đớn;Gạo giã xong rồi trắng tựa bông; Sống ở trê" +
     "n đời người cũng vậy; Gian nan rèn luyện mới thành công”: Bài thơ trên ở trong t" +
@@ -681,7 +709,7 @@ namespace PHANMEMTHI.Forms {
             this.dgvQuestions.Location = new System.Drawing.Point(7, 13);
             this.dgvQuestions.Name = "dgvQuestions";
             this.dgvQuestions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvQuestions.Size = new System.Drawing.Size(334, 325);
+            this.dgvQuestions.Size = new System.Drawing.Size(417, 325);
             this.dgvQuestions.TabIndex = 0;
             this.dgvQuestions.TabStop = false;
             this.dgvQuestions.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.OnQuestionsRowValidating);
@@ -711,9 +739,9 @@ namespace PHANMEMTHI.Forms {
             // panel3
             // 
             this.panel3.Font = new System.Drawing.Font("UTM Avo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(363, 115);
+            this.panel3.Location = new System.Drawing.Point(443, 115);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(57, 303);
+            this.panel3.Size = new System.Drawing.Size(73, 303);
             this.panel3.TabIndex = 0;
             // 
             // label15
@@ -732,7 +760,7 @@ namespace PHANMEMTHI.Forms {
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.btnSave.Location = new System.Drawing.Point(626, 642);
+            this.btnSave.Location = new System.Drawing.Point(892, 642);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(155, 36);
             this.btnSave.TabIndex = 7;
@@ -816,12 +844,152 @@ namespace PHANMEMTHI.Forms {
             this.btnQDownload.UseVisualStyleBackColor = false;
             this.btnQDownload.Click += new System.EventHandler(this.OnButtonDownloadClick);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(824, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 17);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "giờ";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(909, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 17);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "phút";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(998, 24);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(32, 17);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "giây";
+            // 
+            // cbSTHour
+            // 
+            this.cbSTHour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSTHour.FormattingEnabled = true;
+            this.cbSTHour.Location = new System.Drawing.Point(776, 20);
+            this.cbSTHour.Name = "cbSTHour";
+            this.cbSTHour.Size = new System.Drawing.Size(46, 21);
+            this.cbSTHour.TabIndex = 2;
+            this.cbSTHour.TabStop = false;
+            // 
+            // cbSTMinute
+            // 
+            this.cbSTMinute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSTMinute.FormattingEnabled = true;
+            this.cbSTMinute.Location = new System.Drawing.Point(857, 20);
+            this.cbSTMinute.Name = "cbSTMinute";
+            this.cbSTMinute.Size = new System.Drawing.Size(46, 21);
+            this.cbSTMinute.TabIndex = 2;
+            this.cbSTMinute.TabStop = false;
+            // 
+            // cbSTSecond
+            // 
+            this.cbSTSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSTSecond.FormattingEnabled = true;
+            this.cbSTSecond.Location = new System.Drawing.Point(946, 20);
+            this.cbSTSecond.Name = "cbSTSecond";
+            this.cbSTSecond.Size = new System.Drawing.Size(46, 21);
+            this.cbSTSecond.TabIndex = 2;
+            this.cbSTSecond.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(758, 20);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(14, 20);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "|";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(824, 59);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(26, 17);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "giờ";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(909, 59);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(34, 17);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "phút";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(758, 55);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(14, 20);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "|";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(998, 59);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(32, 17);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "giây";
+            // 
+            // cbEDHour
+            // 
+            this.cbEDHour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEDHour.FormattingEnabled = true;
+            this.cbEDHour.Location = new System.Drawing.Point(776, 55);
+            this.cbEDHour.Name = "cbEDHour";
+            this.cbEDHour.Size = new System.Drawing.Size(46, 21);
+            this.cbEDHour.TabIndex = 2;
+            this.cbEDHour.TabStop = false;
+            // 
+            // cbEDMinute
+            // 
+            this.cbEDMinute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEDMinute.FormattingEnabled = true;
+            this.cbEDMinute.Location = new System.Drawing.Point(857, 55);
+            this.cbEDMinute.Name = "cbEDMinute";
+            this.cbEDMinute.Size = new System.Drawing.Size(46, 21);
+            this.cbEDMinute.TabIndex = 2;
+            this.cbEDMinute.TabStop = false;
+            // 
+            // cbEDSecond
+            // 
+            this.cbEDSecond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEDSecond.FormattingEnabled = true;
+            this.cbEDSecond.Location = new System.Drawing.Point(946, 55);
+            this.cbEDSecond.Name = "cbEDSecond";
+            this.cbEDSecond.Size = new System.Drawing.Size(46, 21);
+            this.cbEDSecond.TabIndex = 2;
+            this.cbEDSecond.TabStop = false;
+            // 
             // ExamChangeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(790, 687);
+            this.ClientSize = new System.Drawing.Size(1056, 687);
             this.Controls.Add(this.btnRollback);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnQTemplateDownload);
@@ -913,5 +1081,19 @@ namespace PHANMEMTHI.Forms {
         private System.Windows.Forms.DataGridViewTextBoxColumn Question;
         private System.Windows.Forms.DataGridViewTextBoxColumn Answers_amount;
         private System.Windows.Forms.Button btnQDownload;
+        private System.Windows.Forms.ComboBox cbEDSecond;
+        private System.Windows.Forms.ComboBox cbSTSecond;
+        private System.Windows.Forms.ComboBox cbEDMinute;
+        private System.Windows.Forms.ComboBox cbSTMinute;
+        private System.Windows.Forms.ComboBox cbEDHour;
+        private System.Windows.Forms.ComboBox cbSTHour;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label13;
     }
 }
