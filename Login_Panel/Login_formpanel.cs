@@ -92,9 +92,9 @@ namespace PHANMEMTHI.Login_Panel
                 else
                 {
                     count++;
-                    if (count > 5)
+                    if (count > 4)
                         Application.Exit();
-                    MessageBox.Show("Nhập sai tên người dùng hoặc mật khẩu. \n Chỉ còn " + (5 - count) + " lần nhập.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
+                    MessageBox.Show("Nhập sai tên người dùng hoặc mật khẩu. \nChỉ còn " + (5 - count) + " lần nhập.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
                 }
             }
             else
@@ -107,7 +107,16 @@ namespace PHANMEMTHI.Login_Panel
 
         private void Login_formpanel_Load(object sender, EventArgs e)
         {
-            svbutton.PerformClick();
+            svbutton.PerformClick();            
+        }
+             
+
+        private void Login_formpanel_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{tab}");
+            }
         }
     } 
 }

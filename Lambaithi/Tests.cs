@@ -82,9 +82,14 @@ namespace PHANMEMTHI
                 string b = dr1["End_date"].ToString();
                 enddate = Convert.ToDateTime(dr1["End_date"].ToString());
                 lbend.Text = b.Substring(0, 10);
-                lblimit.Text = dr1["limited_times"].ToString();
-                lbnumber.Text = dr1["number_question"].ToString();
-                gioihan = Convert.ToInt32(dr1["Time"].ToString());
+                gioihan = Convert.ToInt32(dr1["limited_times"].ToString());
+                if (gioihan == 0)
+                {
+                    lblimit.Text = "Không giới hạn";
+                }    
+                else
+                    lblimit.Text = dr1["limited_times"].ToString();
+                lbnumber.Text = dr1["number_question"].ToString();                
             }
 
             }
@@ -109,7 +114,7 @@ namespace PHANMEMTHI
             int result2 = DateTime.Compare(curtdate, enddate);
             if (result1 < 0 && result2 < 0) //Check xem có còn hạn thi không
             {
-                if (lanthi < gioihan)  //check xem đã làm quá số lần giới hạn chưa
+                if (lanthi < gioihan || gioihan == 0)  //check xem đã làm quá số lần giới hạn chưa
                 {
                     this.Hide();
                     Do_Test dtest = new Do_Test(msv, examid, lanthi + 1);

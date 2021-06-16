@@ -87,7 +87,7 @@ namespace PHANMEMTHI.Login_Panel
             this.guna2Button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(168, 41);
-            this.guna2Button5.TabIndex = 25;
+            this.guna2Button5.TabIndex = 20;
             this.guna2Button5.Text = "Đăng nhập";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
@@ -296,6 +296,7 @@ namespace PHANMEMTHI.Login_Panel
             this.Name = "Login_formpanel";
             this.Size = new System.Drawing.Size(806, 340);
             this.Load += new System.EventHandler(this.Login_formpanel_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_formpanel_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
