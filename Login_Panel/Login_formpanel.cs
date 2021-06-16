@@ -57,6 +57,7 @@ namespace PHANMEMTHI.Login_Panel
             userbox.Text = "";
             passbox.Text = "";
         }  // xóa hai ô nhập tên, mật khẩu
+        int count = 0; 
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
@@ -72,7 +73,10 @@ namespace PHANMEMTHI.Login_Panel
                 }  
                 else
                 {
-                    MessageBox.Show("Nhap sai ten nguoi dung hoac mat khau");
+                    count++;
+                    if (count > 5)
+                        Application.Exit();
+                    MessageBox.Show("Nhập sai tên người dùng hoặc mật khẩu. \n Chỉ còn "+ (5 - count) +" lần nhập.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
                 }    
             }   
             else if (student)
@@ -87,7 +91,10 @@ namespace PHANMEMTHI.Login_Panel
                 }
                 else
                 {
-                    MessageBox.Show("Nhap sai ten nguoi dung hoac mat khau");
+                    count++;
+                    if (count > 5)
+                        Application.Exit();
+                    MessageBox.Show("Nhập sai tên người dùng hoặc mật khẩu. \n Chỉ còn " + (5 - count) + " lần nhập.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
                 }
             }
             else

@@ -166,6 +166,7 @@ namespace PHANMEMTHI
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.guna2Panel1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(818, 497);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
