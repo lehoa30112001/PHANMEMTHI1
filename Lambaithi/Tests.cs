@@ -48,7 +48,7 @@ namespace PHANMEMTHI
         }
         private void loaddata()
         {
-            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id";
+            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time/60 as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id";
             DataTable dt = fn.getdt(query);
             testinfo.DataSource = dt;
         } // Load dữ liệu vào Data Grid
@@ -75,16 +75,21 @@ namespace PHANMEMTHI
             {
                 lbsubject.Text = dr1["Subject_name"].ToString();
                 lborder.Text = dr1["Exam_order"].ToString();
-                lbtime.Text = dr1["Time"].ToString() + "phút";
+                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + "phút";
                 string a = dr1["Start_date"].ToString();
                 startdate = Convert.ToDateTime(dr1["Start_date"].ToString());
                 lbstart.Text = a.Substring(0, 10);
                 string b = dr1["End_date"].ToString();
                 enddate = Convert.ToDateTime(dr1["End_date"].ToString());
                 lbend.Text = b.Substring(0, 10);
-                lblimit.Text = dr1["limited_times"].ToString();
-                lbnumber.Text = dr1["number_question"].ToString();
-                gioihan = Convert.ToInt32(dr1["Time"].ToString());
+                gioihan = Convert.ToInt32(dr1["limited_times"].ToString());
+                if (gioihan == 0)
+                {
+                    lblimit.Text = "Không giới hạn";
+                }    
+                else
+                    lblimit.Text = dr1["limited_times"].ToString();
+                lbnumber.Text = dr1["number_question"].ToString();                
             }
 
             }
@@ -109,7 +114,7 @@ namespace PHANMEMTHI
             int result2 = DateTime.Compare(curtdate, enddate);
             if (result1 < 0 && result2 < 0) //Check xem có còn hạn thi không
             {
-                if (lanthi < gioihan)  //check xem đã làm quá số lần giới hạn chưa
+                if (lanthi < gioihan || gioihan == 0)  //check xem đã làm quá số lần giới hạn chưa
                 {
                     this.Hide();
                     Do_Test dtest = new Do_Test(msv, examid, lanthi + 1);
