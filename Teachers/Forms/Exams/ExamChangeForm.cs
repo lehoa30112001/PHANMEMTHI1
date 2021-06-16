@@ -100,6 +100,9 @@ namespace PHANMEMTHI.Forms {
                 this.cbSTDay.SelectedItem = this.CurrentExam.StartDate.Day;
                 this.cbSTMonth.SelectedItem = this.CurrentExam.StartDate.Month;
                 this.cbSTYear.SelectedItem = this.CurrentExam.StartDate.Year;
+                this.cbSTHour.SelectedItem = this.CurrentExam.StartDate.Hour;
+                this.cbSTMinute.SelectedItem = this.CurrentExam.StartDate.Minute;
+                this.cbSTSecond.SelectedItem = this.CurrentExam.StartDate.Second;
             }
 
             // End date
@@ -107,6 +110,9 @@ namespace PHANMEMTHI.Forms {
                 this.cbEDDay.SelectedItem = this.CurrentExam.EndDate.Day;
                 this.cbEDMonth.SelectedItem = this.CurrentExam.EndDate.Month;
                 this.cbEDYear.SelectedItem = this.CurrentExam.EndDate.Year;
+                this.cbEDHour.SelectedItem = this.CurrentExam.EndDate.Hour;
+                this.cbEDMinute.SelectedItem = this.CurrentExam.EndDate.Minute;
+                this.cbEDSecond.SelectedItem = this.CurrentExam.EndDate.Second;
             }
 
             // Exam order
@@ -152,6 +158,24 @@ namespace PHANMEMTHI.Forms {
             for (int i = currentYear; i <= currentYear + 100; i++) {
                 this.cbSTYear.Items.Add(i);
                 this.cbEDYear.Items.Add(i);
+            }
+
+            // ST ST ED Hour
+            this.cbEDHour.Items.Clear();
+            this.cbSTHour.Items.Clear();
+            for (int i = 0; i <= 23; i++) {
+                this.cbEDHour.Items.Add(i);
+                this.cbSTHour.Items.Add(i);
+            }
+            this.cbEDMinute.Items.Clear();
+            this.cbEDSecond.Items.Clear();
+            this.cbSTMinute.Items.Clear();
+            this.cbSTSecond.Items.Clear();
+            for (int i = 0; i <= 69; i++) {
+                this.cbEDMinute.Items.Add(i);
+                this.cbEDSecond.Items.Add(i);
+                this.cbSTMinute.Items.Add(i);
+                this.cbSTSecond.Items.Add(i);
             }
 
             // Answers
@@ -281,12 +305,18 @@ namespace PHANMEMTHI.Forms {
             toDisable.Add(this.cbEDDay);
             toDisable.Add(this.cbEDMonth);
             toDisable.Add(this.cbEDYear);
+            toDisable.Add(this.cbEDHour);
+            toDisable.Add(this.cbEDMinute);
+            toDisable.Add(this.cbEDSecond);
             toDisable.Add(this.cbLimitTimes);
             toDisable.Add(this.cbOrder);
             toDisable.Add(this.cbQuestionAmount);
             toDisable.Add(this.cbSTDay);
             toDisable.Add(this.cbSTMonth);
             toDisable.Add(this.cbSTYear);
+            toDisable.Add(this.cbSTHour);
+            toDisable.Add(this.cbSTMinute);
+            toDisable.Add(this.cbSTSecond);
             toDisable.Add(this.cbTAHour);
             toDisable.Add(this.cbTAMinute);
             toDisable.Add(this.cbTASecond);
@@ -403,7 +433,7 @@ namespace PHANMEMTHI.Forms {
             // Check date
             DateTime startDate;
             try {
-                startDate = new DateTime((int)cbSTYear.SelectedItem, (int)cbSTMonth.SelectedItem, (int)cbSTDay.SelectedItem);
+                startDate = new DateTime((int)cbSTYear.SelectedItem, (int)cbSTMonth.SelectedItem, (int)cbSTDay.SelectedItem, (int)cbSTHour.SelectedItem, (int)cbSTMinute.SelectedItem, (int)cbSTSecond.SelectedItem);
             }
             catch (ArgumentOutOfRangeException) {
                 MessageBox.Show("Vui lòng chọn đúng Ngày bắt đầu", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -411,7 +441,7 @@ namespace PHANMEMTHI.Forms {
             }
             DateTime endDate;
             try {
-                endDate = new DateTime((int)cbEDYear.SelectedItem, (int)cbEDMonth.SelectedItem, (int)cbEDDay.SelectedItem);
+                endDate = new DateTime((int)cbEDYear.SelectedItem, (int)cbEDMonth.SelectedItem, (int)cbEDDay.SelectedItem, (int) cbEDHour.SelectedItem, (int) cbEDMinute.SelectedItem, (int) cbEDSecond.SelectedItem);
             }
             catch (ArgumentOutOfRangeException) {
                 MessageBox.Show("Vui lòng chọn đúng Ngày kết thúc", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -452,10 +482,10 @@ namespace PHANMEMTHI.Forms {
             this.CurrentExam.ExamOrder = cbOrder.SelectedItem.ToString();
 
             // Start day
-            this.CurrentExam.StartDate = new DateTime((int)cbSTYear.SelectedItem, (int)cbSTMonth.SelectedItem, (int)cbSTDay.SelectedItem);
+            this.CurrentExam.StartDate = new DateTime((int)cbSTYear.SelectedItem, (int)cbSTMonth.SelectedItem, (int)cbSTDay.SelectedItem, (int)cbSTHour.SelectedItem, (int)cbSTMinute.SelectedItem, (int)cbSTSecond.SelectedItem);
 
             // End day
-            this.CurrentExam.EndDate = new DateTime((int)cbEDYear.SelectedItem, (int)cbEDMonth.SelectedItem, (int)cbEDDay.SelectedItem); 
+            this.CurrentExam.EndDate = new DateTime((int)cbEDYear.SelectedItem, (int)cbEDMonth.SelectedItem, (int)cbEDDay.SelectedItem, (int)cbEDHour.SelectedItem, (int)cbEDMinute.SelectedItem, (int)cbEDSecond.SelectedItem); 
         }
 
         private void loadTemplateExcel() {
