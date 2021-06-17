@@ -37,10 +37,10 @@ namespace PHANMEMTHI
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.login_formpanel1 = new PHANMEMTHI.Login_Panel.Login_formpanel();
-            this.form_gioithieu1 = new PHANMEMTHI.Login_Panel.form_gioithieu();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.login_formpanel1 = new PHANMEMTHI.Login_Panel.Login_formpanel();
+            this.form_gioithieu1 = new PHANMEMTHI.Login_Panel.form_gioithieu();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.Panel1.SuspendLayout();
@@ -134,8 +134,18 @@ namespace PHANMEMTHI
             this.Panel1.Size = new System.Drawing.Size(806, 340);
             this.Panel1.TabIndex = 1;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this.Panel1;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.Panel1;
+            // 
             // login_formpanel1
             // 
+            this.login_formpanel1.AllowDrop = true;
             this.login_formpanel1.Location = new System.Drawing.Point(0, -10);
             this.login_formpanel1.Name = "login_formpanel1";
             this.login_formpanel1.Size = new System.Drawing.Size(806, 340);
@@ -148,15 +158,6 @@ namespace PHANMEMTHI
             this.form_gioithieu1.Size = new System.Drawing.Size(806, 340);
             this.form_gioithieu1.TabIndex = 1;
             this.form_gioithieu1.Visible = false;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this.Panel1;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.Panel1;
             // 
             // Login
             // 

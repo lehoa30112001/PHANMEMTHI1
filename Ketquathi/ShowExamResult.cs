@@ -125,9 +125,9 @@ namespace PHANMEMTHI
             int result2 = DateTime.Compare(curtdate, enddate);
             if (result1 < 0 && result2 < 0)
             {
-                if (lanthi < limited)
+                if (lanthi < limited || limited == 0)
                 {
-                    this.Close();
+                    this.Hide();
                     Do_Test dtest = new Do_Test(studentid, examid, lanthi + 1);
                     dtest.Show();
                 }

@@ -46,6 +46,7 @@ namespace PHANMEMTHI
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbquestion = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnext = new Guna.UI2.WinForms.Guna2Button();
             this.btback = new Guna.UI2.WinForms.Guna2Button();
             this.answer4 = new System.Windows.Forms.RadioButton();
@@ -79,7 +80,6 @@ namespace PHANMEMTHI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbquestion = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -287,6 +287,42 @@ namespace PHANMEMTHI
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(718, 480);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // lbquestion
+            // 
+            this.lbquestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbquestion.AutoSize = true;
+            this.lbquestion.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.lbquestion.BackColor = System.Drawing.SystemColors.Control;
+            this.lbquestion.BorderThickness = 0;
+            this.lbquestion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbquestion.DefaultText = "";
+            this.lbquestion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lbquestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lbquestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lbquestion.DisabledState.Parent = this.lbquestion;
+            this.lbquestion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lbquestion.FillColor = System.Drawing.SystemColors.Control;
+            this.lbquestion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lbquestion.FocusedState.Parent = this.lbquestion;
+            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lbquestion.ForeColor = System.Drawing.Color.Teal;
+            this.lbquestion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lbquestion.HoverState.Parent = this.lbquestion;
+            this.lbquestion.Location = new System.Drawing.Point(62, 61);
+            this.lbquestion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.lbquestion.MaximumSize = new System.Drawing.Size(1320, 150);
+            this.lbquestion.MaxLength = 500000;
+            this.lbquestion.Multiline = true;
+            this.lbquestion.Name = "lbquestion";
+            this.lbquestion.PasswordChar = '\0';
+            this.lbquestion.PlaceholderText = "";
+            this.lbquestion.ReadOnly = true;
+            this.lbquestion.SelectedText = "";
+            this.lbquestion.ShadowDecoration.Parent = this.lbquestion;
+            this.lbquestion.Size = new System.Drawing.Size(581, 85);
+            this.lbquestion.TabIndex = 0;
             // 
             // btnext
             // 
@@ -821,42 +857,6 @@ namespace PHANMEMTHI
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbquestion
-            // 
-            this.lbquestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbquestion.AutoSize = true;
-            this.lbquestion.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.lbquestion.BackColor = System.Drawing.SystemColors.Control;
-            this.lbquestion.BorderThickness = 0;
-            this.lbquestion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbquestion.DefaultText = "";
-            this.lbquestion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lbquestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lbquestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lbquestion.DisabledState.Parent = this.lbquestion;
-            this.lbquestion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lbquestion.FillColor = System.Drawing.SystemColors.Control;
-            this.lbquestion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lbquestion.FocusedState.Parent = this.lbquestion;
-            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lbquestion.ForeColor = System.Drawing.Color.Teal;
-            this.lbquestion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lbquestion.HoverState.Parent = this.lbquestion;
-            this.lbquestion.Location = new System.Drawing.Point(62, 61);
-            this.lbquestion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.lbquestion.MaximumSize = new System.Drawing.Size(1320, 150);
-            this.lbquestion.MaxLength = 500000;
-            this.lbquestion.Multiline = true;
-            this.lbquestion.Name = "lbquestion";
-            this.lbquestion.PasswordChar = '\0';
-            this.lbquestion.PlaceholderText = "";
-            this.lbquestion.ReadOnly = true;
-            this.lbquestion.SelectedText = "";
-            this.lbquestion.ShadowDecoration.Parent = this.lbquestion;
-            this.lbquestion.Size = new System.Drawing.Size(569, 85);
-            this.lbquestion.TabIndex = 0;
-            // 
             // Do_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -865,6 +865,7 @@ namespace PHANMEMTHI
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Do_Test";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
