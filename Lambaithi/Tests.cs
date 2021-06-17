@@ -113,7 +113,7 @@ namespace PHANMEMTHI
             DateTime curtdate = DateTime.Now;                
             int result1 = DateTime.Compare(startdate, curtdate);
             int result2 = DateTime.Compare(curtdate, enddate);
-            if (result1 < 0 && result2 < 0) //Check xem có còn hạn thi không
+            if (result1 <= 0 && result2 <= 0) //Check xem có còn hạn thi không
             {
                 if (lanthi < gioihan || gioihan == 0)  //check xem đã làm quá số lần giới hạn chưa
                 {
