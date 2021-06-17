@@ -76,7 +76,7 @@ namespace PHANMEMTHI
             {
                 lbsubject.Text = dr1["Subject_name"].ToString();
                 lborder.Text = dr1["Exam_order"].ToString();
-                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + "phút";
+                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + " phút";
                 string a = dr1["Start_date"].ToString();
                 startdate = Convert.ToDateTime(dr1["Start_date"].ToString());
                 lbstart.Text = a.Substring(0, 10);

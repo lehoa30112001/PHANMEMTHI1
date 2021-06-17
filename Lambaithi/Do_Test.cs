@@ -46,7 +46,7 @@ namespace PHANMEMTHI
                 stname.Text = dr["Student_name"].ToString();
                 exorder.Text = dr["exam_order"].ToString();
                 examtype = dr["exam_order"].ToString();
-                extime.Text = dr["time"].ToString();
+                extime.Text = Convert.ToInt32(dr["time"].ToString()) / 60 + " phút"; 
                 examtime = Convert.ToInt32(dr["time"].ToString());
                 clname.Text = dr["class_name"].ToString();
                 classname = dr["class_name"].ToString();
@@ -150,9 +150,9 @@ namespace PHANMEMTHI
             resultid = "result" + stuid + exid + now;
             query = "insert into Student_Exam_Result values ('" + resultid + "', '" + stuid + "', '" + exid + "', 0, '" + DateTime.Now + "', 0, '" + times + "')";
             fn.setdata(query);  //Set mã đề thi
-            h = examtime / 60;
-            m = examtime - (h * 60);
-            s = 0;
+            h = examtime / 3600;
+            m = (examtime - (h * 3600))/60;
+            s = examtime - h*3600 - m*60;
             elaptime.Text = string.Format("{0}:{1}:{2}", h.ToString().PadLeft(2, '0'), m.ToString().PadLeft(2, '0'), s.ToString().PadLeft(2, '0'));
             if (numberquestion <= 20)
                 nextpage.Visible = false;
@@ -338,7 +338,7 @@ namespace PHANMEMTHI
         private void takeaccesstime()
         {
             int elap = h * 3600 + m * 60 + s;
-            int access = examtime * 60;
+            int access = examtime;
             int second = access - elap;
             string query = "update Student_Exam_Result set Access_time = '" + second + "' where Result_id = '" + resultid + "'";
             fn.setdata(query);
