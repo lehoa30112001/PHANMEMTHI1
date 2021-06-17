@@ -127,7 +127,7 @@ namespace PHANMEMTHI
             {
                 if (lanthi < limited)
                 {
-                    this.Close();
+                    this.Hide();
                     Do_Test dtest = new Do_Test(studentid, examid, lanthi + 1);
                     dtest.Show();
                 }
