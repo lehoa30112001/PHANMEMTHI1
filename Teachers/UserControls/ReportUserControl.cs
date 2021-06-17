@@ -35,7 +35,7 @@ namespace PHANMEMTHI.Forms.Panels {
             int currentYear = 1970;
             this.cbSTYear.Items.Clear();
             this.cbEDYear.Items.Clear();
-            for (int i = currentYear; i <= currentYear + 100; i++) {
+            for (int i = currentYear; i <= DateTime.Now.Year + 1; i++) {
                 this.cbSTYear.Items.Add(i);
                 this.cbEDYear.Items.Add(i);
             }
@@ -44,9 +44,9 @@ namespace PHANMEMTHI.Forms.Panels {
             this.cbSTMonth.SelectedItem = 1;
             this.cbSTYear.SelectedItem = 1970;
 
-            this.cbEDDay.SelectedItem = 1;
-            this.cbEDMonth.SelectedItem = 1;
-            this.cbEDYear.SelectedItem = 2070;
+            this.cbEDDay.SelectedItem = DateTime.Now.Day;
+            this.cbEDMonth.SelectedItem = DateTime.Now.Month;
+            this.cbEDYear.SelectedItem = DateTime.Now.Year;
         }
 
         public bool CheckValid() {

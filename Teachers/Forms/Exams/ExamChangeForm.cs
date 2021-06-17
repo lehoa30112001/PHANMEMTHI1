@@ -171,7 +171,7 @@ namespace PHANMEMTHI.Forms {
             this.cbEDSecond.Items.Clear();
             this.cbSTMinute.Items.Clear();
             this.cbSTSecond.Items.Clear();
-            for (int i = 0; i <= 69; i++) {
+            for (int i = 0; i <= 59; i++) {
                 this.cbEDMinute.Items.Add(i);
                 this.cbEDSecond.Items.Add(i);
                 this.cbSTMinute.Items.Add(i);
@@ -366,6 +366,7 @@ namespace PHANMEMTHI.Forms {
         }
 
         private void loadCurrentQA() {
+            if (this.dgvQuestions.CurrentRow == null) return;
             int index = this.dgvQuestions.CurrentRow.Index;
             if (index >= this.CurrentExam.Questions.Count) return;
             // Question
@@ -491,7 +492,7 @@ namespace PHANMEMTHI.Forms {
         private void loadTemplateExcel() {
             using (FolderBrowserDialog ofd = new FolderBrowserDialog()) {
                 if (ofd.ShowDialog() == DialogResult.OK) {
-                    string sourcepath = Application.StartupPath + "\\Extends\\Mau-cau-hoi.xlsx";
+                    string sourcepath = Application.StartupPath + "\\Teachers\\Extends\\Mau-cau-hoi.xlsx";
 
                     File.Copy(sourcepath, Path.Combine(ofd.SelectedPath, "Mau-cau-hoi.xlsx"), true);
 
@@ -725,7 +726,7 @@ namespace PHANMEMTHI.Forms {
             // Save
             if (SQLConnections.SaveExam(this.CurrentExam)) {
                 this.saved = true;
-                MessageBox.Show("Lưu kỳ thi thành công!", "Thành công", MessageBoxButtons.OK);
+                MessageBox.Show("Lưu kỳ thi thành công! Mã kỳ thi: " + this.CurrentExam.ID, this.CurrentExam.ID + " - Lưu thành công", MessageBoxButtons.OK);
                 this.Close();
             }
         }
