@@ -692,11 +692,11 @@ namespace PHANMEMTHI.Source.Connection {
                                 join Student_Classes as student_classes on student_classes.Student_id = student.Student_id
                                 join Classes as classes on student_classes.Class_id = classes.Class_id
                                 join (
-	                                select results.Student_id, MAX(results.Score) as Highest_score, AVG(results.Score) as Average_score, MAX(results.times) as Times
+	                                select results.Student_id, results.Exam_id, MAX(results.Score) as Highest_score, AVG(results.Score) as Average_score, COUNT(results.times) as Times
 	                                from Student_Exam_Result as results
-	                                group by results.Student_id
+	                                group by results.Student_id, results.Exam_id
                                 ) as results on results.Student_id = student.Student_id
-                                join Exams as exams on classes.Class_id = exams.Class_id
+                                join Exams as exams on classes.Class_id = exams.Class_id and results.Exam_id = exams.Exam_id
                                 where classes.Subject_id = @Subject_id AND classes.Teacher_id = @Teacher_id AND exams.Start_date >= @Start_date AND exams.Start_date <= @End_date";
 
             var idParam = new SqlParameter("@Teacher_id", System.Data.SqlDbType.VarChar, 50);
@@ -722,6 +722,10 @@ namespace PHANMEMTHI.Source.Connection {
                 adapt.SelectCommand = cmd;
                 adapt.Fill(table);
                 report.SetDataSource(table);
+                
+                foreach (var r in table.Rows) {
+                    Console.WriteLine(r.ToString());
+                }
             }
         }
 
@@ -735,11 +739,11 @@ namespace PHANMEMTHI.Source.Connection {
                                 join Student_Classes as student_classes on student_classes.Student_id = student.Student_id
                                 join Classes as classes on student_classes.Class_id = classes.Class_id
                                 join (
-	                                select results.Student_id, MAX(results.Score) as Highest_score, AVG(results.Score) as Average_score, MAX(results.times) as Times
+	                                select results.Student_id, results.Exam_id, MAX(results.Score) as Highest_score, AVG(results.Score) as Average_score, COUNT(results.times) as Times
 	                                from Student_Exam_Result as results
-	                                group by results.Student_id
+	                                group by results.Student_id, results.Exam_id
                                 ) as results on results.Student_id = student.Student_id
-                                join Exams as exams on classes.Class_id = exams.Class_id
+                                join Exams as exams on classes.Class_id = exams.Class_id and results.Exam_id = exams.Exam_id
                                 where classes.Class_id = @Class_id AND classes.Teacher_id = @Teacher_id AND exams.Start_date >= @Start_date AND exams.Start_date <= @End_date";
 
             var idParam = new SqlParameter("@Teacher_id", System.Data.SqlDbType.VarChar, 50);

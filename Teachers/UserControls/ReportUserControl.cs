@@ -44,9 +44,9 @@ namespace PHANMEMTHI.Forms.Panels {
             this.cbSTMonth.SelectedItem = 1;
             this.cbSTYear.SelectedItem = 1970;
 
-            this.cbEDDay.SelectedItem = DateTime.Now.Day;
-            this.cbEDMonth.SelectedItem = DateTime.Now.Month;
-            this.cbEDYear.SelectedItem = DateTime.Now.Year;
+            this.cbEDDay.SelectedItem = DateTime.Now.AddDays(1).Day;
+            this.cbEDMonth.SelectedItem = DateTime.Now.AddDays(1).Month;
+            this.cbEDYear.SelectedItem = DateTime.Now.AddDays(1).Year;
         }
 
         public bool CheckValid() {

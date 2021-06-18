@@ -503,9 +503,12 @@ namespace PHANMEMTHI.Forms {
 
         private void readExcel(string fileSource) {
             try {
-                string con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + fileSource + ";Extended Properties='Excel 8.0;HDR=Yes;ImportMixedTypes=Text'";
-                int count = 0;
+                string con = null;
 
+                if (fileSource.EndsWith(".xls")) con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + fileSource + ";Extended Properties='Excel 8.0;HDR=Yes;ImportMixedTypes=Text'";
+                else con = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source='" + fileSource + "';Extended Properties=\"Excel 12.0;HDR=YES;\"";
+
+                int count = 0;
                 int countProblem = 0;
 
                 using (OleDbConnection connection = new OleDbConnection(con)) {
@@ -513,6 +516,17 @@ namespace PHANMEMTHI.Forms {
                     OleDbCommand command = new OleDbCommand("select * from [Sheet1$]", connection);
                     using (OleDbDataReader dr = command.ExecuteReader()) {
                         while (dr.Read()) {
+                            // Check valid
+                            bool isValid = true;
+                            for (int i = 0; i <= 6; i++) {
+                                if (dr.IsDBNull(0)) {
+                                    isValid = false;
+                                    break;
+                                }
+                            }
+                            if (!isValid) continue;
+
+                            // Get question
                             var qS = dr.IsDBNull(0) ? "Câu hỏi trống" : dr[0].ToString();
                             var q = new Question(null, this.CurrentExam.ID, qS);
 
