@@ -118,5 +118,10 @@ namespace PHANMEMTHI.Login_Panel
                 SendKeys.Send("{tab}");
             }
         }
+
+        private void guna2Button5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
     } 
 }

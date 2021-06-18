@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmRptResuly.cs">
+    <Compile Include="Report\FrmRptResuly.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRptResuly.Designer.cs">
+    <Compile Include="Report\FrmRptResuly.Designer.cs">
       <DependentUpon>FrmRptResuly.cs</DependentUpon>
     </Compile>
     <Compile Include="Ketquathi\Class_Exam_Info.cs">
@@ -166,7 +166,7 @@
     <Compile Include="Teachers\UserControls\ReportUserControl.Designer.cs">
       <DependentUpon>ReportUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="KQthi.cs">
+    <Compile Include="Report\KQthi.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KQthi.rpt</DependentUpon>
@@ -179,10 +179,10 @@
       <DependentUpon>Do_Test.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="Login_Panel\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Login_Panel\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Panel\form_gioithieu.cs">
@@ -210,10 +210,10 @@
     <Compile Include="Ketquathi\ShowExamResult.Designer.cs">
       <DependentUpon>ShowExamResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student_Login.cs">
+    <Compile Include="Login_Panel\Student_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_Login.Designer.cs">
+    <Compile Include="Login_Panel\Student_Login.Designer.cs">
       <DependentUpon>Student_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Lambaithi\Tests.cs">
@@ -228,7 +228,7 @@
     <Compile Include="Ketquathi\Test_Result.Designer.cs">
       <DependentUpon>Test_Result.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmRptResuly.resx">
+    <EmbeddedResource Include="Report\FrmRptResuly.resx">
       <DependentUpon>FrmRptResuly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ketquathi\Class_Exam_Info.resx">
@@ -281,14 +281,14 @@
     <EmbeddedResource Include="Teachers\UserControls\ReportUserControl.resx">
       <DependentUpon>ReportUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KQthi.rpt">
+    <EmbeddedResource Include="Report\KQthi.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>KQthi.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Lambaithi\Do_Test.resx">
       <DependentUpon>Do_Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Login_Panel\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Panel\form_gioithieu.resx">
@@ -309,7 +309,7 @@
     <EmbeddedResource Include="Ketquathi\ShowExamResult.resx">
       <DependentUpon>ShowExamResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_Login.resx">
+    <EmbeddedResource Include="Login_Panel\Student_Login.resx">
       <DependentUpon>Student_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lambaithi\Tests.resx">

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PHANMEMTHI {
+namespace PHANMEMTHI.Report {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace PHANMEMTHI {
         
         public override string FullResourceName {
             get {
-                return "PHANMEMTHI.KQthi.rpt";
+                return "PHANMEMTHI.Report.KQthi.rpt";
             }
             set {
                 // Do nothing

@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="giangvien.DefaultText" xml:space="preserve">
+    <value>- Cung cấp các công cụ linh hoạt hỗ trợ giảng viên xây dựng học liệu
+- Kiểm soát học viên, xây dựng bài kiểm tra trực tuyến
+- Cung cấp giao diện theo dõi quá trình học tập của sinh viên theo các báo cáo
+
+</value>
+  </data>
+  <data name="chucnangg.DefaultText" xml:space="preserve">
+    <value>Đề bài: 
+Phần mềm cho phép giáo viên tạo ngân hàng câu hỏi trắc nghiệm và đề thi. Các dạng câu hỏi trắc nghiệm bao gồm : đúng/sai, một câu trả lời đúng. Cho phép sinh viên đăng nhập và thi. In ra bảng điểm sau khi kết thúc bài thi. Lưu trữ bài làm của
+mỗi sinh viên.</value>
+  </data>
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

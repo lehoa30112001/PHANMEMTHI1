@@ -106,7 +106,7 @@ namespace PHANMEMTHI
 
         private void redobutton_Click(object sender, EventArgs e)
         {
-            string query = "select max(Times) as lan from Student_Exam_Result where Exam_id = '" + examid + "'";
+            string query = "select max(Times) from Student_Exam_Result where Exam_id = '" + examid + "' and Student_Exam_Result.Student_id = '" + studentid + "'";
             DataTable dt = fn.getdt(query);
             lanthi = Convert.ToInt32(dt.Rows[0][0].ToString());
 
@@ -125,7 +125,7 @@ namespace PHANMEMTHI
             int result2 = DateTime.Compare(curtdate, enddate);
             if (result1 < 0 && result2 < 0)
             {
-                if (lanthi < limited)
+                if (lanthi < limited || limited == 0)
                 {
                     this.Hide();
                     Do_Test dtest = new Do_Test(studentid, examid, lanthi + 1);

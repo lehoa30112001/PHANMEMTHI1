@@ -49,8 +49,9 @@ namespace PHANMEMTHI
         private void loaddata()
         {
             query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time/60 as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id";
-            DataTable dt = fn.getdt(query);
+            DataTable dt = fn.getdt(query);            
             testinfo.DataSource = dt;
+            testinfo.Columns[4].Visible = false;            
         } // Load dữ liệu vào Data Grid
 
         private void Tests_Load(object sender, EventArgs e)
@@ -75,7 +76,7 @@ namespace PHANMEMTHI
             {
                 lbsubject.Text = dr1["Subject_name"].ToString();
                 lborder.Text = dr1["Exam_order"].ToString();
-                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + "phút";
+                lbtime.Text = Convert.ToInt32(dr1["Time"].ToString())/60 + " phút";
                 string a = dr1["Start_date"].ToString();
                 startdate = Convert.ToDateTime(dr1["Start_date"].ToString());
                 lbstart.Text = a.Substring(0, 10);
@@ -112,7 +113,7 @@ namespace PHANMEMTHI
             DateTime curtdate = DateTime.Now;                
             int result1 = DateTime.Compare(startdate, curtdate);
             int result2 = DateTime.Compare(curtdate, enddate);
-            if (result1 < 0 && result2 < 0) //Check xem có còn hạn thi không
+            if (result1 <= 0 && result2 <= 0) //Check xem có còn hạn thi không
             {
                 if (lanthi < gioihan || gioihan == 0)  //check xem đã làm quá số lần giới hạn chưa
                 {
@@ -131,10 +132,11 @@ namespace PHANMEMTHI
 
         private void btLoc_Click(object sender, EventArgs e)
         {
-            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id and Classes.Class_id = '"+lbsubject.SelectedValue+"'";
+            query = "select Classes.Class_name as N'Lớp học phần', Exams.Exam_id as N'Mã đề', Exams.Exam_order as N'Loại bài thi', Exams.Time / 60 as N'Thời gian (phút)', Exams.limited_times as N'Giới hạn (lần)' from Students, Classes, Student_Classes, Exams where Students.Student_id = '" + msv + "' and number_question > 0 and Students.Student_id = Student_Classes.Student_id and Classes.Class_id = Student_Classes.Class_id and Exams.Class_id = Classes.Class_id and Classes.Class_id = '"+lbsubject.SelectedValue+"'";
             DataTable dt = new DataTable();
             dt = fn.getdt(query);            
             testinfo.DataSource = dt;
+            testinfo.Columns[4].Visible = false;
             testinfo.Refresh();
             if (dt.Rows.Count > 0)
             {

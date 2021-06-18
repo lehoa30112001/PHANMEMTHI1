@@ -90,6 +90,7 @@ namespace PHANMEMTHI.Login_Panel
             this.guna2Button5.TabIndex = 20;
             this.guna2Button5.Text = "Đăng nhập";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.guna2Button5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2Button5_KeyPress);
             // 
             // showpass
             // 
