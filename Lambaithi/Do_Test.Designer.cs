@@ -106,7 +106,7 @@ namespace PHANMEMTHI
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-5, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 118);
+            this.panel1.Size = new System.Drawing.Size(1161, 118);
             this.panel1.TabIndex = 0;
             // 
             // lbnumber
@@ -115,7 +115,7 @@ namespace PHANMEMTHI
             this.lbnumber.AutoSize = true;
             this.lbnumber.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnumber.ForeColor = System.Drawing.Color.White;
-            this.lbnumber.Location = new System.Drawing.Point(866, 69);
+            this.lbnumber.Location = new System.Drawing.Point(927, 69);
             this.lbnumber.Name = "lbnumber";
             this.lbnumber.Size = new System.Drawing.Size(71, 25);
             this.lbnumber.TabIndex = 12;
@@ -127,7 +127,7 @@ namespace PHANMEMTHI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(792, 69);
+            this.label9.Location = new System.Drawing.Point(853, 69);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 25);
             this.label9.TabIndex = 11;
@@ -139,7 +139,7 @@ namespace PHANMEMTHI
             this.extime.AutoSize = true;
             this.extime.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extime.ForeColor = System.Drawing.Color.White;
-            this.extime.Location = new System.Drawing.Point(980, 30);
+            this.extime.Location = new System.Drawing.Point(1041, 30);
             this.extime.Name = "extime";
             this.extime.Size = new System.Drawing.Size(79, 25);
             this.extime.TabIndex = 10;
@@ -151,7 +151,7 @@ namespace PHANMEMTHI
             this.clname.AutoSize = true;
             this.clname.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clname.ForeColor = System.Drawing.Color.White;
-            this.clname.Location = new System.Drawing.Point(504, 69);
+            this.clname.Location = new System.Drawing.Point(534, 69);
             this.clname.Name = "clname";
             this.clname.Size = new System.Drawing.Size(138, 25);
             this.clname.TabIndex = 9;
@@ -163,7 +163,7 @@ namespace PHANMEMTHI
             this.exorder.AutoSize = true;
             this.exorder.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exorder.ForeColor = System.Drawing.Color.White;
-            this.exorder.Location = new System.Drawing.Point(574, 30);
+            this.exorder.Location = new System.Drawing.Point(604, 30);
             this.exorder.Name = "exorder";
             this.exorder.Size = new System.Drawing.Size(138, 25);
             this.exorder.TabIndex = 8;
@@ -199,7 +199,7 @@ namespace PHANMEMTHI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(794, 30);
+            this.label6.Location = new System.Drawing.Point(855, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(192, 25);
             this.label6.TabIndex = 5;
@@ -211,7 +211,7 @@ namespace PHANMEMTHI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(448, 30);
+            this.label5.Location = new System.Drawing.Point(478, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 25);
             this.label5.TabIndex = 4;
@@ -223,7 +223,7 @@ namespace PHANMEMTHI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(446, 69);
+            this.label3.Location = new System.Drawing.Point(476, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 25);
             this.label3.TabIndex = 3;
@@ -285,7 +285,7 @@ namespace PHANMEMTHI
             this.guna2Panel1.Location = new System.Drawing.Point(13, 132);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(718, 480);
+            this.guna2Panel1.Size = new System.Drawing.Size(779, 543);
             this.guna2Panel1.TabIndex = 1;
             // 
             // lbquestion
@@ -306,7 +306,7 @@ namespace PHANMEMTHI
             this.lbquestion.FillColor = System.Drawing.SystemColors.Control;
             this.lbquestion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lbquestion.FocusedState.Parent = this.lbquestion;
-            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lbquestion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.lbquestion.ForeColor = System.Drawing.Color.Teal;
             this.lbquestion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lbquestion.HoverState.Parent = this.lbquestion;
@@ -321,7 +321,7 @@ namespace PHANMEMTHI
             this.lbquestion.ReadOnly = true;
             this.lbquestion.SelectedText = "";
             this.lbquestion.ShadowDecoration.Parent = this.lbquestion;
-            this.lbquestion.Size = new System.Drawing.Size(581, 85);
+            this.lbquestion.Size = new System.Drawing.Size(690, 120);
             this.lbquestion.TabIndex = 0;
             // 
             // btnext
@@ -335,7 +335,7 @@ namespace PHANMEMTHI
             this.btnext.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnext.ForeColor = System.Drawing.Color.White;
             this.btnext.HoverState.Parent = this.btnext;
-            this.btnext.Location = new System.Drawing.Point(491, 412);
+            this.btnext.Location = new System.Drawing.Point(552, 475);
             this.btnext.Name = "btnext";
             this.btnext.ShadowDecoration.Parent = this.btnext;
             this.btnext.Size = new System.Drawing.Size(140, 44);
@@ -354,7 +354,7 @@ namespace PHANMEMTHI
             this.btback.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btback.ForeColor = System.Drawing.Color.White;
             this.btback.HoverState.Parent = this.btback;
-            this.btback.Location = new System.Drawing.Point(130, 412);
+            this.btback.Location = new System.Drawing.Point(130, 475);
             this.btback.Name = "btback";
             this.btback.ShadowDecoration.Parent = this.btback;
             this.btback.Size = new System.Drawing.Size(140, 44);
@@ -367,12 +367,12 @@ namespace PHANMEMTHI
             this.answer4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answer4.AutoSize = true;
-            this.answer4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer4.ForeColor = System.Drawing.Color.Teal;
-            this.answer4.Location = new System.Drawing.Point(56, 359);
+            this.answer4.Location = new System.Drawing.Point(62, 408);
             this.answer4.Name = "answer4";
             this.answer4.Padding = new System.Windows.Forms.Padding(0, 0, 400, 0);
-            this.answer4.Size = new System.Drawing.Size(528, 25);
+            this.answer4.Size = new System.Drawing.Size(534, 26);
             this.answer4.TabIndex = 14;
             this.answer4.TabStop = true;
             this.answer4.Text = "radioButton3";
@@ -384,12 +384,12 @@ namespace PHANMEMTHI
             this.answer3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answer3.AutoSize = true;
-            this.answer3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer3.ForeColor = System.Drawing.Color.Teal;
-            this.answer3.Location = new System.Drawing.Point(56, 290);
+            this.answer3.Location = new System.Drawing.Point(62, 339);
             this.answer3.Name = "answer3";
             this.answer3.Padding = new System.Windows.Forms.Padding(0, 0, 400, 0);
-            this.answer3.Size = new System.Drawing.Size(528, 25);
+            this.answer3.Size = new System.Drawing.Size(534, 26);
             this.answer3.TabIndex = 13;
             this.answer3.TabStop = true;
             this.answer3.Text = "radioButton2";
@@ -401,12 +401,12 @@ namespace PHANMEMTHI
             this.answer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answer2.AutoSize = true;
-            this.answer2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer2.ForeColor = System.Drawing.Color.Teal;
-            this.answer2.Location = new System.Drawing.Point(56, 221);
+            this.answer2.Location = new System.Drawing.Point(62, 270);
             this.answer2.Name = "answer2";
             this.answer2.Padding = new System.Windows.Forms.Padding(0, 0, 400, 0);
-            this.answer2.Size = new System.Drawing.Size(528, 25);
+            this.answer2.Size = new System.Drawing.Size(534, 26);
             this.answer2.TabIndex = 12;
             this.answer2.TabStop = true;
             this.answer2.Text = "radioButton1";
@@ -418,12 +418,12 @@ namespace PHANMEMTHI
             this.answer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answer1.AutoSize = true;
-            this.answer1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1.ForeColor = System.Drawing.Color.Teal;
-            this.answer1.Location = new System.Drawing.Point(56, 152);
+            this.answer1.Location = new System.Drawing.Point(62, 201);
             this.answer1.Name = "answer1";
             this.answer1.Padding = new System.Windows.Forms.Padding(0, 0, 400, 0);
-            this.answer1.Size = new System.Drawing.Size(528, 25);
+            this.answer1.Size = new System.Drawing.Size(534, 26);
             this.answer1.TabIndex = 11;
             this.answer1.TabStop = true;
             this.answer1.Text = "radioButton1";
@@ -436,7 +436,7 @@ namespace PHANMEMTHI
             this.elaptime.AutoSize = true;
             this.elaptime.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.elaptime.ForeColor = System.Drawing.Color.Teal;
-            this.elaptime.Location = new System.Drawing.Point(568, 21);
+            this.elaptime.Location = new System.Drawing.Point(629, 21);
             this.elaptime.Name = "elaptime";
             this.elaptime.Size = new System.Drawing.Size(84, 27);
             this.elaptime.TabIndex = 5;
@@ -475,10 +475,10 @@ namespace PHANMEMTHI
             this.Panel2.Controls.Add(this.button3);
             this.Panel2.Controls.Add(this.button2);
             this.Panel2.Controls.Add(this.button1);
-            this.Panel2.Location = new System.Drawing.Point(755, 132);
+            this.Panel2.Location = new System.Drawing.Point(816, 132);
             this.Panel2.Name = "Panel2";
             this.Panel2.ShadowDecoration.Parent = this.Panel2;
-            this.Panel2.Size = new System.Drawing.Size(325, 480);
+            this.Panel2.Size = new System.Drawing.Size(325, 543);
             this.Panel2.TabIndex = 2;
             // 
             // guna2Button3
@@ -492,7 +492,7 @@ namespace PHANMEMTHI
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(83, 412);
+            this.guna2Button3.Location = new System.Drawing.Point(83, 475);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(185, 44);
@@ -861,7 +861,7 @@ namespace PHANMEMTHI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 624);
+            this.ClientSize = new System.Drawing.Size(1151, 687);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);

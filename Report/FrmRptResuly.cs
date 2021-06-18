@@ -12,7 +12,7 @@ namespace PHANMEMTHI
 {
     public partial class FrmRptResult : Form
     {
-        public FrmRptResult(KQthi rpt)
+        public FrmRptResult(Report.KQthi rpt)
         {
             InitializeComponent();
             crystalReportViewer1.ReportSource = rpt;

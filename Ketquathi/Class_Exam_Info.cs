@@ -74,7 +74,7 @@ namespace PHANMEMTHI
             sql = "Select Times, Date, Score, Exam_order from Exams, Student_Exam_Result, classes where exams.Exam_id = Student_Exam_Result.Exam_id  and Exams.Class_id = Classes.Class_id and Classes.class_id = '" + classid1+"' and Student_Exam_Result.Student_id = '"+studentid.Text+"'";
             DataTable rpttable = new DataTable();
             rpttable = fn.getdt(sql);
-            KQthi rpt = new KQthi();
+            Report.KQthi rpt = new Report.KQthi();
             rpt.SetDataSource(rpttable);
             rpt.DataDefinition.FormulaFields["Subjectname"].Text = "'" + sub + "'";
             rpt.DataDefinition.FormulaFields["Name"].Text = "'" + studentname.Text + "'";
